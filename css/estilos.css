@@ -13,14 +13,15 @@ body {
     background-color: #f5f5f5;
     /* Fondo neutro */
     margin: 0;
+    font-family: monospace;
 }
 
 /* Encabezado */
 header {
-    background-color: #1877f2;
+    background-color: #023e8a;
     /* Azul Facebook */
     color: #fff;
-    padding: 1rem 2rem;
+    padding: 0.3rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -208,7 +209,7 @@ header nav ul.show {
     }
 }
 
-/* Artículos Destacados */
+/* Artículos Destacados ==================================================================================================*/
 .articulos-destacados {
     padding: 2rem;
     background-color: #fff;
@@ -287,8 +288,14 @@ header nav ul.show {
     /* Cambiar color del enlace */
 }
 
+/* Responsivo: Diseño especial para móviles */
+@media (max-width: 768px) {
+    .articulos-destacados .galeria-articulos article {
+        width: 100%;
+    }
+}
 
-/* Categorías destacadas */
+/* Categorías Destacadas =========================================================================================================*/
 .categorias-destacadas {
     padding: 2rem;
     background-color: #fff;
@@ -297,30 +304,78 @@ header nav ul.show {
 
 .categorias-destacadas h2 {
     color: #1877f2;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .galeria-categorias {
     display: flex;
-    gap: 2rem;
     justify-content: center;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
-.galeria-categorias .categoria {
-    text-align: center;
-    width: 200px;
-}
-
-.galeria-categorias .categoria img {
-    width: 100%;
+.categoria {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
     border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
 }
 
-.galeria-categorias .categoria h3 {
-    color: #ff0000;
-    margin-top: 0.5rem;
+.categoria:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
+
+.categoria img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.categoria h3 {
+    color: #000;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.categoria p {
+    margin: 0 1rem 1rem;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.categoria a {
+    display: inline-block;
+    margin: 0 1rem 1rem;
+    color: #1877f2;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.categoria a:hover {
+    color: #d90429;
+    /* Rojo Spiderman */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .galeria-categorias {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .categoria {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
 
 /* Pie de página */
 footer {
@@ -333,7 +388,7 @@ footer {
 
 footer ul {
     list-style: none;
-    display: flex;
+    display: block;
     gap: 1rem;
     justify-content: center;
     margin-top: 1rem;
