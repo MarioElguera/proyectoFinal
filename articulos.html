@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articulo - Blog</title>
+    <link rel="stylesheet" href="css/articulos.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <script src="js/articulos.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>M. E.</h1>
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="articulos.html">ARTÍCULOS</a></li>
+                <li><a href="categorias.html">CATEGORÍAS</a></li>
+                <li><a href="acerca.html">ACERCA DE</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Carrusel de Categorías -->
+        <section class="categorias-destacadas">
+            <h2>Categorías de Artículos</h2>
+            <div class="galeria-categorias">
+                <div class="categoria" data-categoria="futbol">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/futbol2.mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                    <h3>Fútbol</h3>
+                </div>
+                <div class="categoria" data-categoria="viajes">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/viajes2.mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                    <h3>Viajes</h3>
+                </div>
+                <div class="categoria" data-categoria="musica">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/concierto2.mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                    <h3>Música</h3>
+                </div>
+                <div class="categoria" data-categoria="fotografia">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/fotografia.mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                    <h3>Fotografía</h3>
+                </div>
+                <div class="categoria" data-categoria="peliculas">
+                    <video autoplay loop muted playsinline>
+                        <source src="videos/pelicula.mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                    <h3>Películas</h3>
+                </div>
+            </div>
+        </section>
+        <br>
+        <hr>
+        <br>
+
+        <!-- Artículos por Categoría -->
+        <section class="articulos-categoria">
+            <div class="articulos" data-categoria="futbol" style="display: none;">
+                <article>
+                    <img src="img/futbol1.jpg" alt="Artículo Fútbol 1">
+                    <h3>Historia del Fútbol</h3>
+                    <p>Descubre cómo el fútbol se ha convertido en el deporte rey.</p>
+                </article>
+                <article>
+                    <img src="img/futbol2.jpg" alt="Artículo Fútbol 2">
+                    <h3>Los mejores equipos</h3>
+                    <p>Un repaso a los equipos más exitosos del fútbol.</p>
+                </article>
+                <article>
+                    <img src="img/futbol3.jpg" alt="Artículo Fútbol 3">
+                    <h3>Jugadores legendarios</h3>
+                    <p>Una mirada a los jugadores que marcaron la historia.</p>
+                </article>
+                <article>
+                    <img src="img/futbol4.jpg" alt="Artículo Fútbol 4">
+                    <h3>El Mundial 2022</h3>
+                    <p>Momentos icónicos del mundial más reciente.</p>
+                </article>
+            </div>
+            <!-- Repite este bloque para otras categorías -->
+        </section>
+    </main>
+
+
+
+    <footer>
+        <p>&copy; 2025 Blog Personal. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
