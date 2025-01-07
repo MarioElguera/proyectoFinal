@@ -68,7 +68,8 @@
         <!-- Artículos x Categoría ----------------------------------------------------------->
         <section id="articulos-categoria" class="articulos-categoria">
             <div class="articulos" data-categoria="futbol" style="display: none;">
-                <div class="articulo">
+                <div class="articulo" data-titulo="Historia del Fútbol"
+                    data-descripcion-larga="El fútbol, conocido como el deporte rey, tiene orígenes fascinantes que se remontan a la antigüedad. Juegos similares al fútbol se practicaban en civilizaciones como China, Egipto y Roma, pero fue en Inglaterra donde nació el fútbol moderno en el siglo XIX. Con la fundación de la Asociación de Fútbol en 1863, se establecieron reglas formales, como el tamaño del campo, el número de jugadores y la prohibición de usar las manos, marcando la separación con el rugby. Desde entonces, el fútbol evolucionó hasta convertirse en un fenómeno global, con eventos como la Copa Mundial de la FIFA, que reúne a millones de fanáticos y celebra la diversidad cultural a través del deporte. Este artículo también explora hitos clave como la introducción de ligas profesionales, el impacto del fútbol femenino y la influencia de la tecnología, como el VAR, en el juego actual.">
                     <div class="articulo-contenido">
                         <h3>Historia del Fútbol</h3>
                         <p>Descubre los fascinantes orígenes de este deporte rey, desde sus inicios hasta convertirse en
@@ -78,7 +79,9 @@
                         <img src="img/articulos/img/historia_futbol.jpg" alt="Historia del Fútbol">
                     </div>
                 </div>
-                <div class="articulo">
+
+                <div class="articulo" data-titulo="Los Mejores Goles en los Mundiales"
+                    data-descripcion-larga="Desde el inicio de la Copa Mundial de la FIFA en 1930, los goles han sido el alma de este evento. Este artículo repasa los momentos más icónicos, como el gol de Diego Maradona conocido como la 'Mano de Dios' y su espectacular 'Gol del Siglo' en 1986 contra Inglaterra. También recordamos el increíble gol de James Rodríguez para Colombia en 2014 y la famosa volea de Zinedine Zidane en la final de 2002. Además, analizamos cómo los goles no solo representan habilidades técnicas, sino también momentos de esperanza, pasión y unidad para los aficionados de todo el mundo. Incluye estadísticas, videos de los goles y comentarios de expertos sobre su impacto en la historia del fútbol.">
                     <div class="articulo-contenido">
                         <h3>Los Mejores Goles en los Mundiales</h3>
                         <p>Revive los goles más impresionantes y memorables que han marcado la historia de los Mundiales
@@ -88,7 +91,9 @@
                         <img src="img/articulos/img/copa_mundo_2022.jpg" alt="Los Mejores Goles">
                     </div>
                 </div>
-                <div class="articulo">
+
+                <div class="articulo" data-titulo="Jugadores Legendarios"
+                    data-descripcion-larga="El fútbol ha sido moldeado por jugadores excepcionales que se convirtieron en leyendas gracias a su talento, dedicación y carisma. Pelé, con más de 1,200 goles en su carrera, es conocido como 'El Rey del Fútbol'. Diego Maradona, un genio indomable, asombró al mundo con su visión y técnica. Lionel Messi, considerado por muchos como el mejor jugador de todos los tiempos, ha batido récords que parecían imposibles. Este artículo también celebra a figuras históricas como Johan Cruyff, cuyo 'fútbol total' revolucionó el juego, y Cristiano Ronaldo, un ícono de persistencia y excelencia física. Cada jugador ha dejado una marca imborrable en el deporte, inspirando a futuras generaciones.">
                     <div class="articulo-contenido">
                         <h3>Jugadores Legendarios</h3>
                         <p>Explora las historias de los jugadores que cambiaron para siempre el juego con su talento y
@@ -98,7 +103,9 @@
                         <img src="img/articulos/img/jugadores_legendarios.jpg" alt="Jugadores Legendarios">
                     </div>
                 </div>
-                <div class="articulo">
+
+                <div class="articulo" data-titulo="Estrategias Tácticas del Fútbol Moderno"
+                    data-descripcion-larga="El fútbol moderno se define tanto por la creatividad en el campo como por la meticulosa planificación táctica. Las formaciones como el 4-3-3, que prioriza el ataque, o el 5-3-2, que refuerza la defensa, son ejemplos de cómo los entrenadores adaptan sus estrategias a las fortalezas y debilidades de sus equipos. Este artículo analiza cómo figuras como Pep Guardiola han perfeccionado conceptos como la posesión y el 'falso 9', mientras que entrenadores como Diego Simeone destacan por su enfoque en la defensa sólida y el contragolpe. También exploramos el uso de la tecnología, como el análisis de datos, para optimizar el rendimiento en el fútbol profesional.">
                     <div class="articulo-contenido">
                         <h3>Estrategias Tácticas del Fútbol Moderno</h3>
                         <p>Descubre cómo los entrenadores de élite utilizan estrategias tácticas avanzadas para ganar
@@ -110,6 +117,7 @@
                 </div>
 
             </div>
+
 
             <div class="articulos" data-categoria="viajes" style="display: none;">
                 <div class="articulo">
@@ -251,7 +259,15 @@
         </section>
     </main>
 
-
+    <!-- Modal -->
+    <div id="modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <h3 id="modal-titulo"></h3>
+            <p id="modal-descripcion"></p>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2025 Blog Personal. Todos los derechos reservados.</p>
