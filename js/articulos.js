@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Mostrar modal
             modal.style.display = "flex";
+
             // Restablecer el scroll del modal al inicio
             modalContent.scrollTop = 0;
         });
