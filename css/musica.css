@@ -1,0 +1,47 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* Asegura que html y body ocupen toda la altura de la pantalla */
+}
+
+section {
+    flex: 1;
+    /* Ocupa todo el espacio disponible entre el header y el footer */
+    padding: 2rem;
+    /* Fondo opcional */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    h1 {
+        margin: 10px 0;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: color 0.3s;
+        color: white;
+        padding: 50px;
+        font-family: cursive;
+    }
+
+    h1:hover {
+        color: white;
+        opacity: 1;
+    }
+
+    h1:not(:hover) {
+        opacity: 0.2;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+}

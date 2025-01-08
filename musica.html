@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustos Musicales</title>
+    <link rel="stylesheet" href="css/musica.css">
+    <link rel="stylesheet" href="css/inicio.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>M. E.</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="categorias.html">CATEGORÍAS</a></li>
+                <li><a href="acerca.html">ACERCA DE</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section>
+        <div> Les muestro unas cuantas bandas favoritas mias</div>
+        <div class="container">
+            <h1 data-bg="img/musica/metallica.png">Metallica</h1>
+            <h1 data-bg="img/musica/greenDay.jpg">Green Day</h1>
+            <h1 data-bg="img/musica/myChemicalRomance.jpg">My Chemical Romance</h1>
+            <h1 data-bg="img/musica/megadeth.jpg">Megadeth</h1>
+            <h1 data-bg="img/musica/michaelJackson.jpg">Michael Jackson</h1>
+            <h1 data-bg="img/musica/slipknot.jpg">Slipknot</h1>
+            <h1 data-bg="img/musica/vanHalen.jpg">Van Halen</h1>
+            <h1 data-bg="img/musica/nirvana.jpg">Nirvana</h1>
+            <h1 data-bg="img/musica/systemOfADown.jpg">System of a Down</h1>
+            <h1 data-bg="img/musica/theStrokes.jpg">The Strokes</h1>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Blog Personal. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        document.querySelectorAll('h1').forEach(title => {
+            title.addEventListener('mouseover', () => {
+                const bgImage = title.getAttribute('data-bg');
+                document.body.style.backgroundImage = `url('${bgImage}')`;
+                document.body.style.backgroundRepeat = 'no-repeat'; // Evita el mosaico
+                document.body.style.backgroundSize = 'cover'; // Escala la imagen para cubrir la pantalla
+                document.body.style.backgroundPosition = 'center'; // Centra la imagen
+            });
+
+            title.addEventListener('mouseout', () => {
+                document.body.style.backgroundImage = '';
+                document.body.style.backgroundColor = 'black';
+            });
+        });
+    </script>
+</body>
+
+</html>

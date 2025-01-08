@@ -1,9 +1,74 @@
+/* Estilos globales */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* Asegura que html y body ocupen toda la altura de la pantalla */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #1877f2;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Main */
+main {
+    flex: 1;
+    /* Ocupa todo el espacio disponible entre el header y el footer */
+    padding: 2rem;
+    background-color: #f5f5f5;
+    /* Fondo opcional */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+    /* Mantiene su posición bajo el contenido o al fondo */
+    bottom: 0;
+    left: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #1877f2;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #fff;
+}
+
+
 /* Estilo de los Artículos por Categoría */
 /* Categorías Destacadas =========================================================================================================*/
 .categorias-destacadas {
     padding: 0.5rem;
     background-color: #fff;
     text-align: center;
+    flex: 1;
 }
 
 .categorias-destacadas h2 {
