@@ -1,12 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     const categorias = document.querySelectorAll(".categoria");
     const articulosPorCategoria = document.querySelectorAll(".articulos");
+    const textInformativo = document.getElementById("texto-informativo");
 
     categorias.forEach((categoria) => {
         categoria.addEventListener("click", () => {
             // Ocultar todos los bloques de artículos
             articulosPorCategoria.forEach((articulos) => {
                 articulos.style.display = "none";
+                textInformativo.style.display = 'none';
+
             });
 
             // Mostrar los artículos de la categoría seleccionada
