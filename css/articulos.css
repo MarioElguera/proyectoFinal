@@ -95,6 +95,27 @@ footer ul li a:hover {
     text-align: center;
 }
 
+/* Efecto Gelatina */
+.categoria.gelatina {
+    animation: gelatina 1s ease-in-out infinite;
+}
+
+@keyframes gelatina {
+    0% {
+        transform: translateY(0) scaleX(1) scaleY(1);
+    }
+
+    50% {
+        transform: translateY(5px) scaleX(1.05) scaleY(0.95);
+        /* Efecto de compresión y expansión */
+    }
+
+    100% {
+        transform: translateY(0) scaleX(1) scaleY(1);
+    }
+}
+
+
 .categoria:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
