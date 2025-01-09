@@ -282,6 +282,7 @@ header nav ul.show {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+    font-size: 120%;
 }
 
 .articulos-destacados .galeria-articulos article:hover a {
@@ -294,7 +295,109 @@ header nav ul.show {
     .articulos-destacados .galeria-articulos article {
         width: 100%;
     }
+
+    .articulos-destacados .galeria-articulos article img {
+        width: 70vw;
+    }
 }
+
+/* Testimonios ============================================================================ */
+.testimonios {
+    padding: 3rem;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.testimonios h2 {
+    color: #1877f2;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.testimonios .galeria-testimonios {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonios .galeria-testimonios article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    /* Inicialmente fuera de vista */
+    transition: opacity 1s ease, transform 1s ease;
+    /* Transición suave */
+}
+
+.testimonios .galeria-testimonios article.visible {
+    opacity: 1;
+    /* Hace el artículo visible */
+    transform: translateY(0);
+    /* Mueve el artículo hacia su posición original */
+}
+
+/* Hover Efecto */
+.testimonios .galeria-testimonios article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Avatar */
+.testimonios .galeria-testimonios article .avatar {
+    margin-bottom: 1rem;
+}
+
+.testimonios .galeria-testimonios article .avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Texto de Testimonio */
+.testimonios .galeria-testimonios article p {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    .testimonios .galeria-testimonios article {
+        width: 100%;
+    }
+}
+
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    .testimonios .galeria-testimonios article {
+        width: 100%;
+    }
+}
+
+
 
 /* Pie de página */
 footer {

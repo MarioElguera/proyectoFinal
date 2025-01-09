@@ -44,3 +44,31 @@ prevButton.addEventListener('click', showPrevSlide);
 
 // Slider automático cada 5 segundos
 setInterval(showNextSlide, 2000);
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const testimonios = document.querySelectorAll('.testimonios .galeria-testimonios article');
+
+    function mostrarTestimonios() {
+        const windowHeight = window.innerHeight; // Altura de la ventana
+        const scrollTop = window.scrollY; // Posición actual del scroll
+
+        testimonios.forEach(function (testimonio) {
+            const testimonioTop = testimonio.getBoundingClientRect().top + scrollTop; // Distancia desde el top del documento
+            const testimonioBottom = testimonioTop + testimonio.offsetHeight; // La parte inferior del testimonio
+
+            // Si el testimonio está visible en la pantalla
+            if (testimonioBottom > scrollTop && testimonioTop < scrollTop + windowHeight) {
+                testimonio.classList.add('visible');
+            } else {
+                testimonio.classList.remove('visible');
+            }
+        });
+    }
+
+    // Llamar a la función cada vez que se haga scroll
+    window.addEventListener('scroll', mostrarTestimonios);
+
+    // También llamar la función al cargar la página para que los testimonios visibles al principio ya se animen
+    mostrarTestimonios();
+});
