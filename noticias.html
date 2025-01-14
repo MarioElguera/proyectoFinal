@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Blog</title>
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/noticias.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>M. E.</h1>
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="categorias.html">CATEGORÍAS</a></li>
+                <li><a href="noticias.html">NOTICIAS</a></li>
+                <li><a href="acerca.html">ACERCA DE</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="noticias">
+        <h1>Últimas Noticias</h1>
+        <p>Mantente informado con lo más reciente de música, cine, deportes y más.</p>
+        <div class="acordeon">
+            <div class="item">
+                <button class="tab">Música</button>
+                <div class="content">
+                    <article>
+                        <h3><a href="#">Metallica anuncia nueva gira mundial</a></h3>
+                        <p>La banda legendaria regresa a los escenarios con su nuevo álbum.</p>
+                    </article>
+                    <article>
+                        <h3><a href="#">Green Day lanza álbum sorpresa</a></h3>
+                        <p>El nuevo disco promete ser un éxito rotundo.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="item">
+                <button class="tab">Cine</button>
+                <div class="content">
+                    <article>
+                        <h3><a href="#">Estreno de la nueva película de Marvel</a></h3>
+                        <p>El universo cinematográfico se expande con esta entrega épica.</p>
+                    </article>
+                </div>
+            </div>
+            <!-- Agrega más categorías aquí -->
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 Blog Personal. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                const parent = tab.parentElement;
+                const content = parent.querySelector('.content');
+
+                // Cierra todos los demás acordeones
+                document.querySelectorAll('.item').forEach(item => {
+                    if (item !== parent) {
+                        item.classList.remove('active');
+                        item.querySelector('.content').style.maxHeight = '0';
+                    }
+                });
+
+                // Alterna el acordeón actual
+                if (parent.classList.contains('active')) {
+                    parent.classList.remove('active');
+                    content.style.maxHeight = '0';
+                } else {
+                    parent.classList.add('active');
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
