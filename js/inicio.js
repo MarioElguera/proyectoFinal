@@ -1,6 +1,6 @@
 // Seleccionar el botón de toggle y el menú de navegación
-const menuToggle = document.querySelector('.menu-toggle');
-const navMenu = document.querySelector('header nav');
+const menuToggle = document.querySelector('.encabezado__menu-toggle');
+const navMenu = document.querySelector('.encabezado__navegacion');
 
 // Agregar un evento al botón de toggle
 menuToggle.addEventListener('click', () => {
@@ -9,45 +9,45 @@ menuToggle.addEventListener('click', () => {
 });
 
 
-// Slider banner - pagina principal ========================================================================================
+// Slider banner - página principal ========================================================================================
 
 // Seleccionar elementos necesarios
-const slider = document.querySelector('.slider');
-const images = document.querySelectorAll('.slider img');
-const prevButton = document.querySelector('.slider-controls .prev');
-const nextButton = document.querySelector('.slider-controls .next');
+const slider = document.querySelector('.banner__deslizador');
+const images = document.querySelectorAll('.banner__imagen');
+const prevButton = document.querySelector('.banner__control--anterior');
+const nextButton = document.querySelector('.banner__control--siguiente');
 
 let currentIndex = 0;
 const totalImages = images.length;
 
 // Función para actualizar la posición del slider
-function updateSliderPosition() {
+function actualizarPosicionSlider() {
     const offset = -currentIndex * 104; // Cada imagen ocupa el 100% del ancho
     slider.style.transform = `translateX(${offset}%)`;
 }
 
 // Función para mover al siguiente slide
-function showNextSlide() {
+function mostrarSiguienteSlide() {
     currentIndex = (currentIndex + 1) % totalImages; // Volver al inicio si es el último
-    updateSliderPosition();
+    actualizarPosicionSlider();
 }
 
 // Función para mover al slide anterior
-function showPrevSlide() {
+function mostrarSlideAnterior() {
     currentIndex = (currentIndex - 1 + totalImages) % totalImages; // Volver al final si es el primero
-    updateSliderPosition();
+    actualizarPosicionSlider();
 }
 
 // Event Listeners para botones
-nextButton.addEventListener('click', showNextSlide);
-prevButton.addEventListener('click', showPrevSlide);
+nextButton.addEventListener('click', mostrarSiguienteSlide);
+prevButton.addEventListener('click', mostrarSlideAnterior);
 
 // Slider automático cada 5 segundos
-setInterval(showNextSlide, 2000);
+setInterval(mostrarSiguienteSlide, 2000);
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    const testimonios = document.querySelectorAll('.testimonios .galeria-testimonios article');
+    const testimonios = document.querySelectorAll('.testimonios__item');
 
     function mostrarTestimonios() {
         const windowHeight = window.innerHeight; // Altura de la ventana

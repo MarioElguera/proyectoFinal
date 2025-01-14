@@ -6,115 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Blog</title>
     <link rel="stylesheet" href="css/inicio.css">
-    <script src="js/principal.js" defer></script>
+    <script src="js/inicio.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
+    <header class="encabezado">
+        <div class="encabezado__logo">
             <h1>M. E.</h1>
         </div>
-        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
-        <nav>
-            <ul>
-                <li><a href="inicio.html">INICIO</a></li>
-                <li><a href="categorias.html">CATEGORÍAS</a></li>
-                <li><a href="noticias.html">NOTICIAS</a></li>
-                <li><a href="acerca.html">ACERCA DE</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
+        <button class="encabezado__menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <nav class="encabezado__navegacion">
+            <ul class="encabezado__lista">
+                <li class="encabezado__elemento"><a href="inicio.html" class="encabezado__enlace">INICIO</a></li>
+                <li class="encabezado__elemento"><a href="categorias.html" class="encabezado__enlace">CATEGORÍAS</a>
+                </li>
+                <li class="encabezado__elemento"><a href="noticias.html" class="encabezado__enlace">NOTICIAS</a></li>
+                <li class="encabezado__elemento"><a href="acerca.html" class="encabezado__enlace">ACERCA DE</a></li>
+                <li class="encabezado__elemento"><a href="contacto.html" class="encabezado__enlace">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
 
-
     <section class="banner">
-        <div class="slider">
-            <img src="img/inicio/slider_concierto.jpeg" alt="Imagen 1">
-            <img src="img/inicio/slider_futbol.jpg" alt="Imagen 2">
-            <img src="img/inicio/slider_peliculas_sp.jpg" alt="Imagen 3">
-            <img src="img/inicio/slider_vinilos.jpg" alt="Imagen 4">
+        <div class="banner__deslizador">
+            <img src="img/inicio/slider_concierto.jpeg" alt="Imagen 1" class="banner__imagen">
+            <img src="img/inicio/slider_futbol.jpg" alt="Imagen 2" class="banner__imagen">
+            <img src="img/inicio/slider_peliculas_sp.jpg" alt="Imagen 3" class="banner__imagen">
+            <img src="img/inicio/slider_vinilos.jpg" alt="Imagen 4" class="banner__imagen">
         </div>
-        <div class="slider-controls">
-            <button class="prev" aria-label="Anterior">&#8249;</button>
-            <button class="next" aria-label="Siguiente">&#8250;</button>
+        <div class="banner__controles">
+            <button class="banner__control banner__control--anterior" aria-label="Anterior">&#8249;</button>
+            <button class="banner__control banner__control--siguiente" aria-label="Siguiente">&#8250;</button>
         </div>
-        <div class="banner-content">
-            <h1>Bienvenido a Mi Blog</h1>
-            <p>Explora lo mejor del fútbol, peliculas, música y conciertos.</p>
+        <div class="banner__contenido">
+            <h1 class="banner__titulo">Bienvenido a Mi Blog</h1>
+            <p class="banner__descripcion">Explora lo mejor del fútbol, películas, música y conciertos.</p>
         </div>
     </section>
 
-
     <!-- Artículos Destacados -->
     <section class="articulos-destacados">
-        <h2>Artículos Destacados</h2>
-        <div class="galeria-articulos">
-            <article>
-                <img src="img/inicio/articulo_1.jpg" alt="Imagen del artículo 1">
-                <div class="descripcion">
-                    <h3>Mundial de Fútbol 2022: Una Copa para la Historia</h3>
-                    <p>"Revive los momentos más emocionantes del Mundial de Catar 2022, con sorpresas, récords y el
-                        épico
-                        triunfo que quedará grabado en la memoria del fútbol."</p>
-                    <a href="articulos.html">Leer más</a>
+        <h2 class="articulos-destacados__titulo">Artículos Destacados</h2>
+        <div class="articulos-destacados__galeria">
+            <article class="articulos-destacados__item">
+                <img src="img/inicio/articulo_1.jpg" alt="Imagen del artículo 1" class="articulos-destacados__imagen">
+                <div class="articulos-destacados__descripcion">
+                    <h3 class="articulos-destacados__subtitulo">Mundial de Fútbol 2022: Una Copa para la Historia</h3>
+                    <p class="articulos-destacados__texto">"Revive los momentos más emocionantes del Mundial de Catar
+                        2022, con sorpresas, récords y el épico triunfo que quedará grabado en la memoria del fútbol."
+                    </p>
+                    <a href="articulos.html" class="articulos-destacados__enlace">Leer más</a>
                 </div>
             </article>
-            <article>
-                <img src="img/inicio/articulo_2.jpg" alt="Imagen del artículo 2">
-                <h3>Conciertos que Marcaron una Generación</h3>
-                <p>"Descubre cómo dos de las bandas más icónicas, conquistaron a sus fans con espectáculos inolvidables
-                    en sus giras recientes."</p>
-                <a href="articulos.html">Leer más</a>
+            <article class="articulos-destacados__item">
+                <img src="img/inicio/articulo_2.jpg" alt="Imagen del artículo 2" class="articulos-destacados__imagen">
+                <h3 class="articulos-destacados__subtitulo">Conciertos que Marcaron una Generación</h3>
+                <p class="articulos-destacados__texto">"Descubre cómo dos de las bandas más icónicas, conquistaron a sus
+                    fans con espectáculos inolvidables en sus giras recientes."</p>
+                <a href="articulos.html" class="articulos-destacados__enlace">Leer más</a>
             </article>
-            <article>
-                <img src="img/inicio/articulo_3.jpg" alt="Musica">
-                <h3>El Regreso de los Vinilos: Tendencia en 2024</h3>
-                <p>"La magia del sonido retro vuelve a ser protagonista. Los vinilos resurgen como un ícono de nostalgia
-                    y calidad en el mundo de la música."</p>
-                <a href="articulos.html">Leer más</a>
+            <article class="articulos-destacados__item">
+                <img src="img/inicio/articulo_3.jpg" alt="Música" class="articulos-destacados__imagen">
+                <h3 class="articulos-destacados__subtitulo">El Regreso de los Vinilos: Tendencia en 2024</h3>
+                <p class="articulos-destacados__texto">"La magia del sonido retro vuelve a ser protagonista. Los vinilos
+                    resurgen como un ícono de nostalgia y calidad en el mundo de la música."</p>
+                <a href="articulos.html" class="articulos-destacados__enlace">Leer más</a>
             </article>
-            <article>
-                <img src="img/inicio/articulo_4.jpg" alt="Imagen del artículo 4">
-                <h3>Mejor pelicula animada 2024</h3>
-                <p>Si creeias que solo habia 3 spiderman , ahora no pararas de contar cuantos son.</p>
-                <a href="articulos.html">Leer más</a>
+            <article class="articulos-destacados__item">
+                <img src="img/inicio/articulo_4.jpg" alt="Imagen del artículo 4" class="articulos-destacados__imagen">
+                <h3 class="articulos-destacados__subtitulo">Mejor película animada 2024</h3>
+                <p class="articulos-destacados__texto">Si creías que solo había 3 Spiderman, ahora no pararás de contar
+                    cuántos son.</p>
+                <a href="articulos.html" class="articulos-destacados__enlace">Leer más</a>
             </article>
         </div>
     </section>
 
     <!-- Testimonios -->
     <section class="testimonios">
-        <h2>Lo que dicen nuestros lectores</h2>
-        <div class="galeria-testimonios">
-            <article>
-                <div class="avatar">
-                    <img src="img/inicio/usuario_1.jpg" alt="Usuario 1">
+        <h2 class="testimonios__titulo">Lo que dicen nuestros lectores</h2>
+        <div class="testimonios__galeria">
+            <article class="testimonios__item">
+                <div class="testimonios__avatar">
+                    <img src="img/inicio/usuario_1.jpg" alt="Usuario 1" class="testimonios__avatar-imagen">
                 </div>
-                <p>"¡Increíble cómo este blog combina mi amor por el fútbol y la música! Me encantó el artículo sobre el
-                    regreso de los vinilos." - Juan P.</p>
+                <p class="testimonios__texto">"¡Increíble cómo este blog combina mi amor por el fútbol y la música! Me
+                    encantó el artículo sobre el regreso de los vinilos." - Juan P.</p>
             </article>
-            <article>
-                <div class="avatar">
-                    <img src="img/inicio/usuario_2.jpg" alt="Usuario 2">
+            <article class="testimonios__item">
+                <div class="testimonios__avatar">
+                    <img src="img/inicio/usuario_2.jpg" alt="Usuario 2" class="testimonios__avatar-imagen">
                 </div>
-                <p>"Gracias por compartir tus conocimientos sobre los mejores conciertos del año. ¡Espero no perderme el
-                    próximo!" - Carla G.</p>
+                <p class="testimonios__texto">"Gracias por compartir tus conocimientos sobre los mejores conciertos del
+                    año. ¡Espero no perderme el próximo!" - Carla G.</p>
             </article>
-            <article>
-                <div class="avatar">
-                    <img src="img/inicio/usuario_3.jpg" alt="Usuario 3">
+            <article class="testimonios__item">
+                <div class="testimonios__avatar">
+                    <img src="img/inicio/usuario_3.jpg" alt="Usuario 3" class="testimonios__avatar-imagen">
                 </div>
-                <p>"Me encanta el enfoque personal que le das a los artículos de fútbol. ¡Sigue así!" - Daniel T.</p>
+                <p class="testimonios__texto">"Me encanta el enfoque personal que le das a los artículos de fútbol.
+                    ¡Sigue así!" - Daniel T.</p>
             </article>
         </div>
     </section>
 
-
-    <footer>
-        <p>&copy; 2025 Blog Personal. Todos los derechos reservados.</p>
-        <ul>
-            <li><a href="#">Política de Privacidad</a></li>
-            <li><a href="#">Términos y Condiciones</a></li>
+    <footer class="pie-de-pagina">
+        <p class="pie-de-pagina__texto">&copy; 2025 Blog Personal. Todos los derechos reservados.</p>
+        <ul class="pie-de-pagina__lista">
+            <li class="pie-de-pagina__item"><a href="#" class="pie-de-pagina__enlace">Política de Privacidad</a></li>
+            <li class="pie-de-pagina__item"><a href="#" class="pie-de-pagina__enlace">Términos y Condiciones</a></li>
         </ul>
     </footer>
 </body>
