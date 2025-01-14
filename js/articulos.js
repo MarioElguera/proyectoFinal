@@ -1,20 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const categorias = document.querySelectorAll(".categoria");
-    const articulosPorCategoria = document.querySelectorAll(".articulos");
-    const textInformativo = document.getElementById("texto-informativo");
+    const categorias = document.querySelectorAll(".categorias__item");
+    const articulosPorCategoria = document.querySelectorAll(".articulos__lista");
+    const textInformativo = document.getElementById("articulos__mensaje");
 
     categorias.forEach((categoria) => {
         categoria.addEventListener("click", () => {
             // Ocultar todos los bloques de artículos
             articulosPorCategoria.forEach((articulos) => {
                 articulos.style.display = "none";
-                textInformativo.style.display = 'none';
-
+                textInformativo.style.display = "none";
             });
 
             // Mostrar los artículos de la categoría seleccionada
             const categoriaSeleccionada = categoria.getAttribute("data-categoria");
-            const articulosSeleccionados = document.querySelector(`.articulos[data-categoria="${categoriaSeleccionada}"]`);
+            const articulosSeleccionados = document.querySelector(`.articulos__lista[data-categoria="${categoriaSeleccionada}"]`);
             if (articulosSeleccionados) {
                 articulosSeleccionados.style.display = "flex";
             }
@@ -24,12 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("modal");
-    const modalContent = modal.querySelector(".modal-content");
-    const modalImg = document.getElementById("modal-img");
-    const modalTitulo = document.getElementById("modal-titulo");
-    const modalDescripcion = document.getElementById("modal-descripcion");
-    const closeBtn = modal.querySelector(".close");
-    const articulos = document.querySelectorAll(".articulo");
+    const modalContent = modal.querySelector(".modal__contenido");
+    const modalImg = document.getElementById("modal__imagen");
+    const modalTitulo = document.getElementById("modal__titulo");
+    const modalDescripcion = document.getElementById("modal__descripcion");
+    const closeBtn = modal.querySelector(".modal__cerrar");
+    const articulos = document.querySelectorAll(".articulos__item");
 
     // Abrir modal al hacer clic en un artículo
     articulos.forEach((articulo) => {

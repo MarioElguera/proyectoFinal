@@ -61,28 +61,26 @@ footer ul li a:hover {
     color: #fff;
 }
 
-
-/* Estilo de los Artículos por Categoría */
-/* Categorías Destacadas =========================================================================================================*/
-.categorias-destacadas {
+/* Categorías Destacadas */
+.categorias__destacadas {
     padding: 0.5rem;
     text-align: center;
     flex: 1;
 }
 
-.categorias-destacadas h2 {
+.categorias__titulo {
     color: #1877f2;
     margin-bottom: 2rem;
 }
 
-.galeria-categorias {
+.categorias__galeria {
     display: flex;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
 }
 
-.categoria {
+.categorias__item {
     position: relative;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -95,33 +93,12 @@ footer ul li a:hover {
     text-align: center;
 }
 
-/* Efecto Gelatina */
-.categoria.gelatina {
-    animation: gelatina 1s ease-in-out infinite;
-}
-
-@keyframes gelatina {
-    0% {
-        transform: translateY(0) scaleX(1) scaleY(1);
-    }
-
-    50% {
-        transform: translateY(5px) scaleX(1.05) scaleY(0.95);
-        /* Efecto de compresión y expansión */
-    }
-
-    100% {
-        transform: translateY(0) scaleX(1) scaleY(1);
-    }
-}
-
-
-.categoria:hover {
+.categorias__item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-.categoria video {
+.categorias__video {
     position: absolute;
     top: 0;
     left: 0;
@@ -131,10 +108,9 @@ footer ul li a:hover {
     z-index: 1;
 }
 
-.categoria a {
+.categorias__enlace {
     position: relative;
     color: #fff;
-    margin: 0;
     font-size: 1.5rem;
     z-index: 2;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
@@ -147,17 +123,18 @@ footer ul li a:hover {
     /* Fondo semitransparente para el texto */
 }
 
-.articulos-categoria {
+/* Artículos */
+.articulos__categoria {
     padding: 2rem;
 }
 
-.articulos {
+.articulos__lista {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.articulo {
+.articulos__item {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -173,83 +150,50 @@ footer ul li a:hover {
     cursor: pointer;
 }
 
-.articulo:hover {
+.articulos__item:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.articulo-contenido {
+.articulos__contenido {
     flex: 1;
     padding: 1rem;
     text-align: left;
 }
 
-.articulo-contenido h3 {
+.articulos__titulo {
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 0.5rem;
     font-weight: 600;
 }
 
-.articulo-contenido p {
+.articulos__descripcion {
     font-size: 1rem;
     color: #777;
     line-height: 1.5;
 }
 
-.articulo-imagen {
+.articulos__imagen-container {
     flex-shrink: 0;
     height: 150px;
     overflow: hidden;
     border-radius: 8px;
 }
 
-.articulo-imagen img {
+.articulos__imagen {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.articulo:hover .articulo-imagen img {
+.articulos__item:hover .articulos__imagen {
     transform: scale(1.05);
     /* Zoom en la imagen */
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .articulo {
-        display: block;
-        /* Cambia a bloque */
-        text-align: center;
-        /* Centra el contenido */
-        padding: 1rem;
-    }
-
-    .articulo img {
-        max-width: 100%;
-        /* Imagen ocupa todo el ancho */
-        margin: 0 auto 1rem;
-        /* Centrar la imagen */
-        border-radius: 8px;
-    }
-
-    .articulo-contenido {
-        text-align: left;
-    }
-
-    .articulo h3 {
-        font-size: 1.2rem;
-        /* Ajusta tamaño del título */
-    }
-
-    .articulo p {
-        font-size: 0.9rem;
-        /* Ajusta tamaño del texto */
-    }
-}
-
-/* Modal General */
+/* Modal */
 .modal {
     position: fixed;
     top: 0;
@@ -264,7 +208,7 @@ footer ul li a:hover {
     padding: 1rem;
 }
 
-.modal-content {
+.modal__contenido {
     background: #fff;
     padding: 2rem;
     border-radius: 8px;
@@ -272,36 +216,32 @@ footer ul li a:hover {
     width: 100%;
     max-height: 80vh;
     overflow-y: auto;
-    /* Scroll activado para el contenido largo */
     text-align: center;
     position: relative;
 }
 
-.modal-content img {
+.modal__imagen {
     width: 100%;
     max-height: 200px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-
-.modal-content h3 {
+.modal__titulo {
     margin-top: 1rem;
     font-size: 1.5rem;
     color: #333;
 }
 
-.modal-content p {
+.modal__descripcion {
     margin-top: 1rem;
     font-size: 1rem;
     color: #555;
     line-height: 1.6;
     text-align: left;
-    /* Mejor lectura para textos largos */
 }
 
-/* Close Button */
-.close {
+.modal__cerrar {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -311,11 +251,11 @@ footer ul li a:hover {
     transition: color 0.3s ease;
 }
 
-.close:hover {
+.modal__cerrar:hover {
     color: #d90429;
 }
 
-/* Animación de entrada */
+/* Animaciones */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -325,5 +265,32 @@ footer ul li a:hover {
     to {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .articulos__item {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .articulos__imagen {
+        max-width: 100%;
+        margin: 0 auto 1rem;
+        border-radius: 8px;
+    }
+
+    .articulos__contenido {
+        text-align: left;
+    }
+
+    .articulos__titulo {
+        font-size: 1.2rem;
+    }
+
+    .articulos__descripcion {
+        font-size: 0.9rem;
     }
 }
