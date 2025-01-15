@@ -12,14 +12,6 @@ body {
     flex-direction: column;
 }
 
-/* Header */
-header {
-    background-color: #1877f2;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-
 /* Main */
 main {
     flex: 1;
@@ -31,24 +23,23 @@ main {
 
 .noticias {
     padding: 2rem;
-    background-color: #0a0a0a;
-    color: white;
+    color: black;
 }
 
-.noticias h1 {
+.noticias__titulo {
     text-align: center;
     color: #2196f3;
     /* Azul */
 }
 
-.acordeon .item {
+.noticias__acordeon .acordeon__item {
     border: 1px solid #333;
     margin: 1rem 0;
     border-radius: 5px;
     overflow: hidden;
 }
 
-.tab {
+.acordeon__tab {
     width: 100%;
     background-color: #333;
     color: white;
@@ -60,12 +51,12 @@ main {
     transition: background-color 0.3s;
 }
 
-.tab:hover {
+.acordeon__tab:hover {
     background-color: #2196f3;
     /* Azul */
 }
 
-.content {
+.acordeon__content {
     max-height: 0;
     overflow: hidden;
     background-color: #222;
@@ -73,27 +64,27 @@ main {
     transition: max-height 0.5s ease;
 }
 
-.content article {
+.acordeon__articulo {
     margin: 1rem 0;
 }
 
-.content h3 a {
+.acordeon__articulo h3 a {
     color: #ff4747;
     /* Rojo */
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.content h3 a:hover {
+.acordeon__articulo h3 a:hover {
     color: #2196f3;
     /* Azul */
 }
 
-.content p {
+.acordeon__articulo p {
     color: #ccc;
 }
 
-.item.active .content {
+.acordeon__item.active .acordeon__content {
     max-height: 400px;
     /* Ajustar al contenido */
 }
