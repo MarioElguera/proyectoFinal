@@ -18,32 +18,31 @@ body {
     text-align: center;
 }
 
-.contacto h2 {
+.contacto__titulo {
     color: #333;
     margin-bottom: 1rem;
 }
 
-.contacto p {
+.contacto__descripcion {
     color: #555;
     margin-bottom: 2rem;
     font-size: 1rem;
 }
 
-.contacto .form-group {
+.contacto__formulario .formulario__grupo {
     margin-bottom: 1.5rem;
 }
 
-.contacto .form-group label {
+.contacto__formulario .formulario__label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
     color: #555;
     font-size: 15px;
-
 }
 
-.contacto .form-group input,
-.contacto .form-group textarea {
+.contacto__formulario .formulario__input,
+.contacto__formulario .formulario__textarea {
     width: 100%;
     padding: 0.8rem;
     border: 1px solid #ddd;
@@ -52,7 +51,7 @@ body {
     color: #333;
 }
 
-.contacto button {
+.contacto__formulario .formulario__boton {
     background-color: #1877f2;
     color: #fff;
     border: none;
@@ -63,7 +62,7 @@ body {
     transition: background-color 0.3s;
 }
 
-.contacto button:hover {
+.contacto__formulario .formulario__boton:hover {
     background-color: #0056b3;
 }
 
@@ -73,12 +72,12 @@ body {
     padding: 1rem;
 }
 
-.redes-sociales h2 {
+.redes-sociales__titulo {
     margin-bottom: 1rem;
     color: #333;
 }
 
-.redes-sociales ul {
+.redes-sociales__lista {
     list-style: none;
     padding: 0;
     display: flex;
@@ -86,13 +85,13 @@ body {
     gap: 1rem;
 }
 
-.redes-sociales ul li a {
+.redes-sociales__lista .redes-sociales__item .redes-sociales__enlace {
     text-decoration: none;
     font-size: 1.2rem;
     color: #1877f2;
     transition: color 0.3s;
 }
 
-.redes-sociales ul li a:hover {
+.redes-sociales__lista .redes-sociales__item .redes-sociales__enlace:hover {
     color: #0056b3;
 }

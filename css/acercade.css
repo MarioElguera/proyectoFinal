@@ -20,26 +20,26 @@ body {
     border-radius: 8px;
 }
 
-.acerca-content {
+.acerca__contenido {
     flex: 1;
     padding-right: 1rem;
 }
 
-.acerca-content h2 {
+.acerca__titulo {
     color: #333;
     margin-bottom: 1rem;
 }
 
-.acerca-content p {
+.acerca__descripcion {
     color: #555;
     margin-bottom: 1rem;
 }
 
-.acerca-content strong {
+.acerca__descripcion strong {
     color: #1877f2;
 }
 
-.acerca .imagen img {
+.acerca__imagen-container img {
     max-width: 300px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -55,27 +55,27 @@ body {
     border-radius: 8px;
 }
 
-.valores h2 {
+.valores__titulo {
     color: #333;
     margin-bottom: 1rem;
     text-align: center;
 }
 
-.valores ul {
+.valores__lista {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: left;
 }
 
-.valores ul li {
+.valores__item {
     margin-bottom: 1rem;
     padding-left: 1.5rem;
     position: relative;
     color: #555;
 }
 
-.valores ul li::before {
+.valores__item::before {
     content: "•";
     color: #1877f2;
     position: absolute;
