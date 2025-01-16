@@ -126,6 +126,7 @@ footer ul li a:hover {
 /* Artículos */
 .articulos__categoria {
   padding: 2rem;
+  text-align: center;
 }
 
 .articulos__lista {
@@ -238,7 +239,10 @@ footer ul li a:hover {
   font-size: 1rem;
   color: #555;
   line-height: 1.6;
-  text-align: left;
+  text-align: justify;
+  hyphens: auto;
+  word-spacing: normal;
+  line-height: 1.3;
 }
 
 .modal__cerrar {
@@ -270,6 +274,10 @@ footer ul li a:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
+  main {
+    padding: 0;
+  }
+
   .articulos__item {
     display: block;
     text-align: center;
@@ -292,5 +300,10 @@ footer ul li a:hover {
 
   .articulos__descripcion {
     font-size: 0.9rem;
+  }
+
+  .articulos__categoria {
+    padding: 0;
+    text-align: center;
   }
 }

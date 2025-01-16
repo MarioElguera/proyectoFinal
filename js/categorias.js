@@ -21,9 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-});
 
-document.addEventListener("DOMContentLoaded", () => {
+  //Modal
   const modal = document.getElementById("modal");
   const modalContent = modal.querySelector(".modal__contenido");
   const modalImg = document.getElementById("modal__imagen");
