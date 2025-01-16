@@ -24,6 +24,8 @@ main {
 .noticias {
   padding: 2rem;
   color: black;
+  display: flex;
+  flex-direction: column;
 }
 
 .noticias__titulo {
@@ -34,6 +36,10 @@ main {
 
 .noticias__descripcion {
   text-align: center;
+}
+
+.noticias__acordeon {
+  align-self: center;
 }
 
 .noticias__acordeon .acordeon__item {
