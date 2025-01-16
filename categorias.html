@@ -1,309 +1,504 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Categorias - Blog</title>
-    <link rel="stylesheet" href="css/categorias.css">
-    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/categorias.css" />
+    <link rel="stylesheet" href="css/inicio.css" />
     <script src="js/categorias.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="encabezado">
-        <div class="encabezado__logo">
-            <h1>M. E.</h1>
-        </div>
-        <button class="encabezado__menu-toggle" aria-label="Abrir menú">&#9776;</button>
-        <nav class="encabezado__navegacion">
-            <ul class="encabezado__lista">
-                <li class="encabezado__elemento"><a href="inicio.html" class="encabezado__enlace">INICIO</a></li>
-                <li class="encabezado__elemento"><a href="categorias.html" class="encabezado__enlace">CATEGORÍAS</a>
-                </li>
-                <li class="encabezado__elemento"><a href="noticias.html" class="encabezado__enlace">NOTICIAS</a></li>
-                <li class="encabezado__elemento"><a href="acerca.html" class="encabezado__enlace">ACERCA DE</a></li>
-                <li class="encabezado__elemento"><a href="contacto.html" class="encabezado__enlace">CONTACTO</a></li>
-            </ul>
-        </nav>
+      <div class="encabezado__logo">
+        <h1>M. E.</h1>
+      </div>
+      <button class="encabezado__menu-toggle" aria-label="Abrir menú">
+        &#9776;
+      </button>
+      <nav class="encabezado__navegacion">
+        <ul class="encabezado__lista">
+          <li class="encabezado__elemento">
+            <a href="inicio.html" class="encabezado__enlace">INICIO</a>
+          </li>
+          <li class="encabezado__elemento">
+            <a href="categorias.html" class="encabezado__enlace">CATEGORÍAS</a>
+          </li>
+          <li class="encabezado__elemento">
+            <a href="noticias.html" class="encabezado__enlace">NOTICIAS</a>
+          </li>
+          <li class="encabezado__elemento">
+            <a href="acerca.html" class="encabezado__enlace">ACERCA DE</a>
+          </li>
+          <li class="encabezado__elemento">
+            <a href="contacto.html" class="encabezado__enlace">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <!-- Categorías -->
-        <section class="categorias__destacadas">
-            <h2 class="categorias__titulo">Categorías</h2>
-            <div class="categorias__galeria">
-                <div class="categorias__item categorias__item--futbol" data-categoria="futbol">
-                    <video class="categorias__video" autoplay loop muted playsinline>
-                        <source src="assets/videos/futbol2.mp4" type="video/mp4">
-                        Tu navegador no soporta videos.
-                    </video>
-                    <a href="#articulos-categoria" class="categorias__enlace">Fútbol</a>
-                </div>
-                <div class="categorias__item categorias__item--viajes" data-categoria="viajes">
-                    <video class="categorias__video" autoplay loop muted playsinline>
-                        <source src="assets/videos/viajes2.mp4" type="video/mp4">
-                        Tu navegador no soporta videos.
-                    </video>
-                    <a href="#articulos-categoria" class="categorias__enlace">Viajes</a>
-                </div>
-                <div class="categorias__item categorias__item--musica" data-categoria="musica">
-                    <video class="categorias__video" autoplay loop muted playsinline>
-                        <source src="assets/videos/concierto2.mp4" type="video/mp4">
-                        Tu navegador no soporta videos.
-                    </video>
-                    <a href="#articulos-categoria" class="categorias__enlace">Música</a>
-                </div>
-                <div class="categorias__item categorias__item--peliculas" data-categoria="peliculas">
-                    <video class="categorias__video" autoplay loop muted playsinline>
-                        <source src="assets/videos/pelicula.mp4" type="video/mp4">
-                        Tu navegador no soporta videos.
-                    </video>
-                    <a href="#articulos-categoria" class="categorias__enlace">Películas</a>
-                </div>
+      <!-- Categorías -->
+      <section class="categorias__destacadas">
+        <h2 class="categorias__titulo">Categorías</h2>
+        <div class="categorias__galeria">
+          <div
+            class="categorias__item categorias__item--futbol"
+            data-categoria="futbol"
+          >
+            <video class="categorias__video" autoplay loop muted playsinline>
+              <source src="assets/videos/futbol2.mp4" type="video/mp4" />
+              Tu navegador no soporta videos.
+            </video>
+            <a href="#articulos-categoria" class="categorias__enlace">Fútbol</a>
+          </div>
+          <div
+            class="categorias__item categorias__item--viajes"
+            data-categoria="viajes"
+          >
+            <video class="categorias__video" autoplay loop muted playsinline>
+              <source src="assets/videos/viajes2.mp4" type="video/mp4" />
+              Tu navegador no soporta videos.
+            </video>
+            <a href="#articulos-categoria" class="categorias__enlace">Viajes</a>
+          </div>
+          <div
+            class="categorias__item categorias__item--musica"
+            data-categoria="musica"
+          >
+            <video class="categorias__video" autoplay loop muted playsinline>
+              <source src="assets/videos/concierto2.mp4" type="video/mp4" />
+              Tu navegador no soporta videos.
+            </video>
+            <a href="#articulos-categoria" class="categorias__enlace">Música</a>
+          </div>
+          <div
+            class="categorias__item categorias__item--peliculas"
+            data-categoria="peliculas"
+          >
+            <video class="categorias__video" autoplay loop muted playsinline>
+              <source src="assets/videos/pelicula.mp4" type="video/mp4" />
+              Tu navegador no soporta videos.
+            </video>
+            <a href="#articulos-categoria" class="categorias__enlace"
+              >Películas</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- Artículos por Categoría -->
+      <section id="articulos-categoria" class="articulos__categoria">
+        <h1 id="articulos__mensaje" class="articulos__mensaje">
+          👆 Selecciona una de las categorías que se muestran arriba para ver
+          los artículos. 👆
+        </h1>
+        <div
+          class="articulos__lista"
+          data-categoria="futbol"
+          style="display: none"
+        >
+          <div
+            class="articulos__item"
+            data-titulo="Historia del Fútbol"
+            data-descripcion-larga="El fútbol, conocido como el deporte rey, tiene orígenes fascinantes que se remontan a la antigüedad. Juegos similares al fútbol se practicaban en civilizaciones como China, Egipto y Roma, pero fue en Inglaterra donde nació el fútbol moderno en el siglo XIX. Con la fundación de la Asociación de Fútbol en 1863, se establecieron reglas formales, como el tamaño del campo, el número de jugadores y la prohibición de usar las manos, marcando la separación con el rugby. Desde entonces, el fútbol evolucionó hasta convertirse en un fenómeno global, con eventos como la Copa Mundial de la FIFA, que reúne a millones de fanáticos y celebra la diversidad cultural a través del deporte. Este artículo también explora hitos clave como la introducción de ligas profesionales, el impacto del fútbol femenino y la influencia de la tecnología, como el VAR, en el juego actual."
+          >
+            <div class="articulos__contenido">
+              <h3 class="articulos__titulo">Historia del Fútbol</h3>
+              <p class="articulos__descripcion">
+                Descubre los fascinantes orígenes de este deporte rey...
+              </p>
             </div>
-        </section>
-
-        <br>
-        <hr>
-        <br>
-
-        <!-- Artículos por Categoría -->
-        <section id="articulos-categoria" class="articulos__categoria">
-            <h1 id="articulos__mensaje" class="articulos__mensaje">
-                👆 Selecciona una de las categorías que se muestran arriba para ver los artículos. 👆
-            </h1>
-            <div class="articulos__lista" data-categoria="futbol" style="display: none;">
-                <div class="articulos__item" data-titulo="Historia del Fútbol"
-                    data-descripcion-larga="El fútbol, conocido como el deporte rey, tiene orígenes fascinantes que se remontan a la antigüedad. Juegos similares al fútbol se practicaban en civilizaciones como China, Egipto y Roma, pero fue en Inglaterra donde nació el fútbol moderno en el siglo XIX. Con la fundación de la Asociación de Fútbol en 1863, se establecieron reglas formales, como el tamaño del campo, el número de jugadores y la prohibición de usar las manos, marcando la separación con el rugby. Desde entonces, el fútbol evolucionó hasta convertirse en un fenómeno global, con eventos como la Copa Mundial de la FIFA, que reúne a millones de fanáticos y celebra la diversidad cultural a través del deporte. Este artículo también explora hitos clave como la introducción de ligas profesionales, el impacto del fútbol femenino y la influencia de la tecnología, como el VAR, en el juego actual.">
-                    <div class="articulos__contenido">
-                        <h3 class="articulos__titulo">Historia del Fútbol</h3>
-                        <p class="articulos__descripcion">Descubre los fascinantes orígenes de este deporte rey...</p>
-                    </div>
-                    <div class="articulos__imagen-container">
-                        <img class="articulos__imagen" src="assets/img/articulos/img/historia_futbol.jpg"
-                            alt="Historia del Fútbol">
-                    </div>
-                </div>
-
-                <div class="articulos__item" data-titulo="Los Mejores Goles en los Mundiales"
-                    data-descripcion-larga="Desde el inicio de la Copa Mundial de la FIFA en 1930, los goles han sido el alma de este evento. Este artículo repasa los momentos más icónicos, como el gol de Diego Maradona conocido como la 'Mano de Dios' y su espectacular 'Gol del Siglo' en 1986 contra Inglaterra. También recordamos el increíble gol de James Rodríguez para Colombia en 2014 y la famosa volea de Zinedine Zidane en la final de 2002. Además, analizamos cómo los goles no solo representan habilidades técnicas, sino también momentos de esperanza, pasión y unidad para los aficionados de todo el mundo. Incluye estadísticas, videos de los goles y comentarios de expertos sobre su impacto en la historia del fútbol.">
-                    <div class="articulos__contenido">
-                        <h3 class="articulos__titulo">Los Mejores Goles en los Mundiales</h3>
-                        <p class="articulos__descripcion">Revive los goles más impresionantes y memorables...</p>
-                    </div>
-                    <div class="articulos__imagen-container">
-                        <img class="articulos__imagen" src="assets/img/articulos/img/copa_mundo_2022.jpg"
-                            alt="Los Mejores Goles">
-                    </div>
-                </div>
-
-                <div class="articulos__item" data-titulo="Jugadores Legendarios"
-                    data-descripcion-larga="El fútbol ha sido moldeado por jugadores excepcionales que se convirtieron en leyendas gracias a su talento, dedicación y carisma. Pelé, con más de 1,200 goles en su carrera, es conocido como 'El Rey del Fútbol'. Diego Maradona, un genio indomable, asombró al mundo con su visión y técnica. Lionel Messi, considerado por muchos como el mejor jugador de todos los tiempos, ha batido récords que parecían imposibles. Este artículo también celebra a figuras históricas como Johan Cruyff, cuyo 'fútbol total' revolucionó el juego, y Cristiano Ronaldo, un ícono de persistencia y excelencia física. Cada jugador ha dejado una marca imborrable en el deporte, inspirando a futuras generaciones.">
-                    <div class="articulos__contenido">
-                        <h3 class="articulos__titulo">Jugadores Legendarios</h3>
-                        <p class="articulos__descripcion">Explora las historias de los jugadores que cambiaron para
-                            siempre el juego...</p>
-                    </div>
-                    <div class="articulos__imagen-container">
-                        <img class="articulos__imagen" src="assets/img/articulos/img/jugadores_legendarios.jpg"
-                            alt="Jugadores Legendarios">
-                    </div>
-                </div>
-
-                <div class="articulos__item" data-titulo="Estrategias Tácticas del Fútbol Moderno"
-                    data-descripcion-larga="El fútbol moderno se define tanto por la creatividad en el campo como por la meticulosa planificación táctica. Las formaciones como el 4-3-3, que prioriza el ataque, o el 5-3-2, que refuerza la defensa, son ejemplos de cómo los entrenadores adaptan sus estrategias a las fortalezas y debilidades de sus equipos. Este artículo analiza cómo figuras como Pep Guardiola han perfeccionado conceptos como la posesión y el 'falso 9', mientras que entrenadores como Diego Simeone destacan por su enfoque en la defensa sólida y el contragolpe. También exploramos el uso de la tecnología, como el análisis de datos, para optimizar el rendimiento en el fútbol profesional.">
-                    <div class="articulos__contenido">
-                        <h3 class="articulos__titulo">Estrategias Tácticas del Fútbol Moderno</h3>
-                        <p class="articulos__descripcion">Descubre cómo los entrenadores de élite utilizan estrategias
-                            tácticas avanzadas...</p>
-                    </div>
-                    <div class="articulos__imagen-container">
-                        <img class="articulos__imagen" src="assets/img/articulos/img/mejores_equipos_futbol.jpg"
-                            alt="Estrategias Tácticas">
-                    </div>
-                </div>
+            <div class="articulos__imagen-container">
+              <img
+                class="articulos__imagen"
+                src="assets/img/articulos/img/historia_futbol.jpg"
+                alt="Historia del Fútbol"
+              />
             </div>
+          </div>
 
-            <div class="articulos__lista" data-categoria="viajes" style="display: none;">
-                <div class="articulos__item" data-titulo="Los Mejores Destinos de 2025"
-                    data-descripcion-larga="Descubre los destinos más impresionantes para visitar este 2025. Desde las paradisíacas playas de Bora Bora, donde la arena blanca se combina con aguas cristalinas, hasta las vibrantes ciudades culturales como Kioto en Japón, que ofrecen un viaje en el tiempo con sus templos históricos y paisajes inolvidables. Este año también destaca Islandia, con sus auroras boreales y paisajes volcánicos, y Sudáfrica, famosa por sus safaris y reservas naturales. En este artículo encontrarás recomendaciones para planificar tu viaje, desde las mejores épocas para visitar estos lugares hasta consejos prácticos para aprovechar al máximo tu experiencia.">
-                    <div class="articulos__contenido">
-                        <h3 class="articulos__titulo">Los Mejores Destinos de 2025</h3>
-                        <p class="articulos__descripcion">Descubre los lugares más impresionantes para visitar este
-                            año...</p>
-                    </div>
-                    <div class="articulos__imagen-container">
-                        <img class="articulos__imagen" src="assets/img/articulos/img/anio2025.jpg" alt="Destinos de Viaje">
-                    </div>
-                </div>
-
-                <div class="articulos__item" data-titulo="Consejos para Viajar con Bajo Presupuesto"
-                    data-descripcion-larga="Viajar con bajo presupuesto es posible con la planificación adecuada y algunos trucos útiles. Este artículo ofrece consejos prácticos, como elegir destinos con bajo costo de vida, utilizar plataformas de alojamiento económico como Couchsurfing o Airbnb, y optar por transporte público o caminatas para desplazarse. Además, aprenderás cómo aprovechar ofertas de vuelos, reducir gastos en comidas eligiendo mercados locales, y evitar las trampas para turistas. También exploramos el impacto positivo de viajar de manera económica, desde una experiencia más auténtica hasta una mayor conexión con la cultura local.">
-                    <div class="articulos__contenido">
-                        <h3 class="articulos__titulo">Consejos para Viajar con Bajo Presupuesto</h3>
-                        <p class="articulos__descripcion">Aprende cómo viajar por el mundo sin gastar una fortuna...</p>
-                    </div>
-                    <div class="articulos__imagen-container">
-                        <img class="articulos__imagen" src="assets/img/articulos/img/presupuesto.jpg"
-                            alt="Viajar con Presupuesto">
-                    </div>
-                </div>
-
-                <div class="articulos__item" data-titulo="10 Experiencias Únicas para Aventureros"
-                    data-descripcion-larga="Si eres un amante de la aventura, este artículo es para ti. Descubre 10 experiencias únicas que te llevarán al límite, desde hacer senderismo en los Andes peruanos, explorando el majestuoso Camino Inca, hasta sumergirte en cuevas submarinas en México. Otras actividades incluyen parapente sobre los Alpes suizos, rafting en los rápidos del río Colorado, y un emocionante safari en Kenia. Estas experiencias no solo ofrecen adrenalina, sino también una conexión más profunda con la naturaleza y culturas locales. Además, encontrarás consejos sobre cómo prepararte física y mentalmente para estas aventuras.">
-                    <div class="articulos__contenido">
-                        <h3 class="articulos__titulo">10 Experiencias Únicas para Aventureros</h3>
-                        <p class="articulos__descripcion">Desde hacer senderismo en los Andes hasta explorar cuevas
-                            submarinas, estas actividades son
-                            perfectas para los amantes de la aventura.</p>
-                    </div>
-                    <div class="articulos__imagen-container">
-                        <img class="articulos__imagen" src="assets/img/articulos/img/aventura.jpg"
-                            alt="Experiencias de Aventura">
-                    </div>
-                </div>
-
-                <div class="articulos__item" data-titulo="Las Mejores Playas del Caribe"
-                    data-descripcion-larga="El Caribe es sinónimo de paraíso, y este artículo destaca las playas más impresionantes de la región. Relájate en la famosa Grace Bay en las Islas Turcas y Caicos, conocida por sus aguas turquesas y su arena blanca como el azúcar. Explora la vida submarina en Playa Flamenco, Puerto Rico, o disfruta de la exclusividad de las playas privadas en las Islas Vírgenes Británicas. Cada destino ofrece algo único, ya sea snorkel, tranquilidad o vibrantes bares de playa. Además, te brindamos consejos para planificar tu viaje, desde las mejores temporadas hasta actividades imperdibles en cada lugar.">
-                    <div class="articulos__contenido">
-                        <h3 class="articulos__titulo">Las Mejores Playas del Caribe</h3>
-                        <p>Relájate en las aguas cristalinas y arenas blancas de las mejores playas del Caribe. Perfecto
-                            para unas vacaciones inolvidables.</p>
-                    </div>
-                    <div class="articulos__imagen-container">
-                        <img class="articulos__imagen" src="assets/img/articulos/img/playa.jpg" alt="Playas del Caribe">
-                    </div>
-                </div>
+          <div
+            class="articulos__item"
+            data-titulo="Los Mejores Goles en los Mundiales"
+            data-descripcion-larga="Desde el inicio de la Copa Mundial de la FIFA en 1930, los goles han sido el alma de este evento. Este artículo repasa los momentos más icónicos, como el gol de Diego Maradona conocido como la 'Mano de Dios' y su espectacular 'Gol del Siglo' en 1986 contra Inglaterra. También recordamos el increíble gol de James Rodríguez para Colombia en 2014 y la famosa volea de Zinedine Zidane en la final de 2002. Además, analizamos cómo los goles no solo representan habilidades técnicas, sino también momentos de esperanza, pasión y unidad para los aficionados de todo el mundo. Incluye estadísticas, videos de los goles y comentarios de expertos sobre su impacto en la historia del fútbol."
+          >
+            <div class="articulos__contenido">
+              <h3 class="articulos__titulo">
+                Los Mejores Goles en los Mundiales
+              </h3>
+              <p class="articulos__descripcion">
+                Revive los goles más impresionantes y memorables...
+              </p>
             </div>
-
-            <div class="articulos__lista" data-categoria="musica" style="display: none;">
-                <div class="articulos__item" data-titulo="La Revolución del Rock"
-                    data-descripcion-larga="El rock es más que un género musical; es un movimiento cultural que cambió la forma en que el mundo experimenta la música. Desde sus raíces en los años 50 con figuras icónicas como Elvis Presley, hasta su evolución en los 70 con bandas como Led Zeppelin y Pink Floyd, el rock ha definido generaciones. Este artículo profundiza en cómo el rock desafió las normas sociales, dio voz a movimientos políticos y se convirtió en el soundtrack de cambios históricos. También exploramos su influencia en géneros modernos como el punk, el grunge y el indie.">
-                    <div class="articulos__contenido">
-                        <h3 class="articulos__titulo">La Revolución del Rock</h3>
-                        <p class="articulos__descripcion">>Explora cómo el rock transformó la industria musical y sigue
-                            siendo un género icónico en la
-                            actualidad.</p>
-                    </div>
-                    <div class="articulos__imagen-container">
-                        <img class="articulos__imagen" src="assets/img/articulos/img/rock.jpg" alt="Revolución del Rock">
-                    </div>
-                </div>
-
-                <div class="articulos__item" data-titulo="Instrumentos Inolvidables"
-                    data-descripcion-larga="La historia de la música está llena de instrumentos que dejaron una huella imborrable en la industria. Desde la mítica guitarra Gibson Les Paul, que definió el sonido del rock, hasta el piano Steinway, utilizado en conciertos clásicos, cada instrumento cuenta una historia. Este artículo también destaca innovaciones modernas como los sintetizadores Moog, que revolucionaron la música electrónica, y las baterías electrónicas que transformaron el ritmo en géneros como el pop y el hip-hop. Aprende sobre los músicos que llevaron estos instrumentos al estrellato y su impacto en la música global.">
-                    <div class="articulos__contenido">
-                        <h3 class="articulos__titulo">Instrumentos Inolvidables</h3>
-                        <p class="articulos__descripcion">Un recorrido por los instrumentos que marcaron la historia de
-                            la música, desde guitarras legendarias hasta pianos icónicos.</p>
-                    </div>
-                    <div class="articulos__imagen-container">
-                        <img class="articulos__imagen" src="assets/img/articulos/img/instrumentos.jpg"
-                            alt="Instrumentos Inolvidables">
-                    </div>
-                </div>
-
-                <div class="articulos__item" data-titulo="Los Mejores Álbumes de la Década"
-                    data-descripcion-larga="Los últimos diez años han sido testigos de una explosión de creatividad en la música, con álbumes que definieron nuestra era. Este artículo analiza trabajos emblemáticos como 'To Pimp a Butterfly' de Kendrick Lamar, que redefinió el hip-hop, y '25' de Adele, que conmovió al mundo con su poderosa voz. También exploramos cómo artistas como Billie Eilish y Taylor Swift innovaron en géneros como el pop y el folk. Descubre qué hace que estos álbumes sean tan influyentes y cómo reflejan los cambios culturales y sociales de nuestra época.">
-                    <div class="articulos__contenido">
-                        <h3 class="articulos__titulo">Los Mejores Álbumes de la Década</h3>
-                        <p class="articulos__descripcion">Descubre los discos que definieron los últimos diez años, con
-                            artistas que dejaron su huella en la historia.
-                        </p>
-                    </div>
-                    <div class="articulos__imagen-container">
-                        <img class="articulos__imagen" src="assets/img/articulos/img/musica_decada.jpg" alt="Mejores Álbumes">
-                    </div>
-                </div>
-
-                <div class="articulos__item" data-titulo="Festivales Musicales Imprescindibles"
-                    data-descripcion-larga="Los festivales musicales no solo son eventos de entretenimiento, sino experiencias culturales únicas que reúnen a miles de personas. Desde el místico Glastonbury en Inglaterra, con su ambiente bohemio y legendarias actuaciones, hasta Coachella en California, conocido por su fusión de música, arte y moda, estos festivales han redefinido cómo vivimos la música en vivo. Este artículo también explora festivales emergentes en América Latina, como el Vive Latino, y cómo están transformando la escena musical global. Descubre consejos para disfrutar al máximo de estos eventos, desde qué llevar hasta cómo planificar tu experiencia.">
-                    <div class="articulos__contenido">
-                        <h3 class="articulos__titulo">Festivales Musicales Imprescindibles</h3>
-                        <p class="articulos__descripcion">Desde Coachella hasta Glastonbury, conoce los festivales más
-                            famosos...</p>
-                    </div>
-                    <div class="articulos__imagen-container">
-                        <img class="articulos__imagen" src="assets/img/articulos/img/festivales.jpg"
-                            alt="Festivales Musicales">
-                    </div>
-                </div>
+            <div class="articulos__imagen-container">
+              <img
+                class="articulos__imagen"
+                src="assets/img/articulos/img/copa_mundo_2022.jpg"
+                alt="Los Mejores Goles"
+              />
             </div>
+          </div>
 
-            <div class="articulos__lista" data-categoria="peliculas" style="display: none;">
-                <div class="articulos__item" data-titulo="Las Mejores Películas del 2025"
-                    data-descripcion-larga="El 2025 ha sido un año impresionante para los amantes del cine, con películas que han cautivado tanto a críticos como a espectadores. Entre las más destacadas están las secuelas de grandes franquicias, como la esperada 'Guardianes del Multiverso', que llevó los efectos visuales a un nuevo nivel, y 'Misión Imposible: Rescate Final', que redefine el género de acción. También se estrenaron películas independientes como 'El Camino de la Luz', que sorprendió con una narrativa emocional y actuaciones memorables. Este artículo repasa las producciones más importantes del año, analizando sus temas, impacto cultural y éxito en taquilla.">
-                    <div class="articulos__contenido">
-                        <h3 class="articulos__titulo">Las Mejores Películas del 2025</h3>
-                        <p class="articulos__descripcion">Descubre las películas que están marcando tendencia este
-                            año...</p>
-                    </div>
-                    <div class="articulos__imagen-container">
-                        <img class="articulos__imagen" src="assets/img/articulos/img/peliculas_2025.jpg"
-                            alt="Películas del 2025">
-                    </div>
-                </div>
-
-                <div class="articulos__item" data-titulo="Los Mejores Villanos del Cine"
-                    data-descripcion-larga="Desde el maquiavélico Hannibal Lecter hasta el carismático Joker, los villanos del cine han dejado una marca imborrable en la cultura popular. Este artículo hace un recorrido por los antagonistas más memorables, explorando qué los hace tan fascinantes. Destacamos villanos clásicos como Darth Vader, cuya redención sorprendió a todos, y personajes más recientes como Thanos, quien redefinió el concepto de maldad con motivaciones complejas. También analizamos cómo los villanos se han convertido en protagonistas en películas como 'Joker' de 2019, cambiando la perspectiva del público.">
-                    <div class="articulos__contenido">
-                        <h3 class="articulos__titulo">Los Mejores Villanos del Cine</h3>
-                        <p class="articulos__descripcion">Un recorrido por los personajes más malvados y memorables...
-                        </p>
-                    </div>
-                    <div class="articulos__imagen-container">
-                        <img class="articulos__imagen" src="assets/img/articulos/img/villanos.jpg" alt="Villanos del Cine">
-                    </div>
-                </div>
-
-                <div class="articulos__item" data-titulo="Películas Animadas que Marcaron Generaciones"
-                    data-descripcion-larga="Las películas animadas han sido un puente entre generaciones, transmitiendo valores universales y emociones profundas. Desde los clásicos de Disney como 'El Rey León' y 'Blanca Nieves', hasta las obras maestras modernas como 'Intensamente' y 'Spider-Man: Un Nuevo Universo', estas producciones han elevado el arte de la animación. Este artículo analiza cómo estas películas combinan narrativa, música y diseño visual para crear historias inolvidables. Además, exploramos su impacto cultural y cómo han influido en la industria del cine y en la vida de millones de personas.">
-                    <div class="articulos__contenido">
-                        <h3 class="articulos__titulo">Películas Animadas que Marcaron Generaciones</h3>
-                        <p class="articulos__descripcion">Desde los clásicos de Disney hasta las últimas joyas de
-                            Pixar...</p>
-                    </div>
-                    <div class="articulos__imagen-container">
-                        <img class="articulos__imagen" src="assets/img/articulos/img/peliculas_animadas.jpg"
-                            alt="Películas Animadas">
-                    </div>
-                </div>
-
-                <div class="articulos__item" data-titulo="Clásicos del Cine que Nunca Pasan de Moda"
-                    data-descripcion-larga="Algunas películas trascienden el tiempo y siguen cautivando al público generación tras generación. Este artículo destaca títulos como 'Casablanca', con su icónica frase 'Siempre nos quedará París', y 'El Padrino', que redefinió el cine de gánsteres. También mencionamos obras de ciencia ficción como '2001: Una Odisea del Espacio', que marcó un antes y un después en el género, y 'Lo que el Viento se Llevó', con su poderosa narrativa épica. Exploramos por qué estas películas siguen siendo relevantes hoy en día y cómo influenciaron a los cineastas modernos.">
-                    <div class="articulos__contenido">
-                        <h3 class="articulos__titulo">Clásicos del Cine que Nunca Pasan de Moda</h3>
-                        <p class="articulos__descripcion">Una lista de películas clásicas que siguen cautivando al
-                            público...</p>
-                    </div>
-                    <div class="articulos__imagen-container">
-                        <img class="articulos__imagen" src="assets/img/articulos/img/clasicos_cine.webp"
-                            alt="Clásicos del Cine">
-                    </div>
-                </div>
+          <div
+            class="articulos__item"
+            data-titulo="Jugadores Legendarios"
+            data-descripcion-larga="El fútbol ha sido moldeado por jugadores excepcionales que se convirtieron en leyendas gracias a su talento, dedicación y carisma. Pelé, con más de 1,200 goles en su carrera, es conocido como 'El Rey del Fútbol'. Diego Maradona, un genio indomable, asombró al mundo con su visión y técnica. Lionel Messi, considerado por muchos como el mejor jugador de todos los tiempos, ha batido récords que parecían imposibles. Este artículo también celebra a figuras históricas como Johan Cruyff, cuyo 'fútbol total' revolucionó el juego, y Cristiano Ronaldo, un ícono de persistencia y excelencia física. Cada jugador ha dejado una marca imborrable en el deporte, inspirando a futuras generaciones."
+          >
+            <div class="articulos__contenido">
+              <h3 class="articulos__titulo">Jugadores Legendarios</h3>
+              <p class="articulos__descripcion">
+                Explora las historias de los jugadores que cambiaron para
+                siempre el juego...
+              </p>
             </div>
-        </section>
+            <div class="articulos__imagen-container">
+              <img
+                class="articulos__imagen"
+                src="assets/img/articulos/img/jugadores_legendarios.jpg"
+                alt="Jugadores Legendarios"
+              />
+            </div>
+          </div>
+
+          <div
+            class="articulos__item"
+            data-titulo="Estrategias Tácticas del Fútbol Moderno"
+            data-descripcion-larga="El fútbol moderno se define tanto por la creatividad en el campo como por la meticulosa planificación táctica. Las formaciones como el 4-3-3, que prioriza el ataque, o el 5-3-2, que refuerza la defensa, son ejemplos de cómo los entrenadores adaptan sus estrategias a las fortalezas y debilidades de sus equipos. Este artículo analiza cómo figuras como Pep Guardiola han perfeccionado conceptos como la posesión y el 'falso 9', mientras que entrenadores como Diego Simeone destacan por su enfoque en la defensa sólida y el contragolpe. También exploramos el uso de la tecnología, como el análisis de datos, para optimizar el rendimiento en el fútbol profesional."
+          >
+            <div class="articulos__contenido">
+              <h3 class="articulos__titulo">
+                Estrategias Tácticas del Fútbol Moderno
+              </h3>
+              <p class="articulos__descripcion">
+                Descubre cómo los entrenadores de élite utilizan estrategias
+                tácticas avanzadas...
+              </p>
+            </div>
+            <div class="articulos__imagen-container">
+              <img
+                class="articulos__imagen"
+                src="assets/img/articulos/img/mejores_equipos_futbol.jpg"
+                alt="Estrategias Tácticas"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="articulos__lista"
+          data-categoria="viajes"
+          style="display: none"
+        >
+          <div
+            class="articulos__item"
+            data-titulo="Los Mejores Destinos de 2025"
+            data-descripcion-larga="Descubre los destinos más impresionantes para visitar este 2025. Desde las paradisíacas playas de Bora Bora, donde la arena blanca se combina con aguas cristalinas, hasta las vibrantes ciudades culturales como Kioto en Japón, que ofrecen un viaje en el tiempo con sus templos históricos y paisajes inolvidables. Este año también destaca Islandia, con sus auroras boreales y paisajes volcánicos, y Sudáfrica, famosa por sus safaris y reservas naturales. En este artículo encontrarás recomendaciones para planificar tu viaje, desde las mejores épocas para visitar estos lugares hasta consejos prácticos para aprovechar al máximo tu experiencia."
+          >
+            <div class="articulos__contenido">
+              <h3 class="articulos__titulo">Los Mejores Destinos de 2025</h3>
+              <p class="articulos__descripcion">
+                Descubre los lugares más impresionantes para visitar este año...
+              </p>
+            </div>
+            <div class="articulos__imagen-container">
+              <img
+                class="articulos__imagen"
+                src="assets/img/articulos/img/anio2025.jpg"
+                alt="Destinos de Viaje"
+              />
+            </div>
+          </div>
+
+          <div
+            class="articulos__item"
+            data-titulo="Consejos para Viajar con Bajo Presupuesto"
+            data-descripcion-larga="Viajar con bajo presupuesto es posible con la planificación adecuada y algunos trucos útiles. Este artículo ofrece consejos prácticos, como elegir destinos con bajo costo de vida, utilizar plataformas de alojamiento económico como Couchsurfing o Airbnb, y optar por transporte público o caminatas para desplazarse. Además, aprenderás cómo aprovechar ofertas de vuelos, reducir gastos en comidas eligiendo mercados locales, y evitar las trampas para turistas. También exploramos el impacto positivo de viajar de manera económica, desde una experiencia más auténtica hasta una mayor conexión con la cultura local."
+          >
+            <div class="articulos__contenido">
+              <h3 class="articulos__titulo">
+                Consejos para Viajar con Bajo Presupuesto
+              </h3>
+              <p class="articulos__descripcion">
+                Aprende cómo viajar por el mundo sin gastar una fortuna...
+              </p>
+            </div>
+            <div class="articulos__imagen-container">
+              <img
+                class="articulos__imagen"
+                src="assets/img/articulos/img/presupuesto.jpg"
+                alt="Viajar con Presupuesto"
+              />
+            </div>
+          </div>
+
+          <div
+            class="articulos__item"
+            data-titulo="10 Experiencias Únicas para Aventureros"
+            data-descripcion-larga="Si eres un amante de la aventura, este artículo es para ti. Descubre 10 experiencias únicas que te llevarán al límite, desde hacer senderismo en los Andes peruanos, explorando el majestuoso Camino Inca, hasta sumergirte en cuevas submarinas en México. Otras actividades incluyen parapente sobre los Alpes suizos, rafting en los rápidos del río Colorado, y un emocionante safari en Kenia. Estas experiencias no solo ofrecen adrenalina, sino también una conexión más profunda con la naturaleza y culturas locales. Además, encontrarás consejos sobre cómo prepararte física y mentalmente para estas aventuras."
+          >
+            <div class="articulos__contenido">
+              <h3 class="articulos__titulo">
+                10 Experiencias Únicas para Aventureros
+              </h3>
+              <p class="articulos__descripcion">
+                Desde hacer senderismo en los Andes hasta explorar cuevas
+                submarinas, estas actividades son perfectas para los amantes de
+                la aventura.
+              </p>
+            </div>
+            <div class="articulos__imagen-container">
+              <img
+                class="articulos__imagen"
+                src="assets/img/articulos/img/aventura.jpg"
+                alt="Experiencias de Aventura"
+              />
+            </div>
+          </div>
+
+          <div
+            class="articulos__item"
+            data-titulo="Las Mejores Playas del Caribe"
+            data-descripcion-larga="El Caribe es sinónimo de paraíso, y este artículo destaca las playas más impresionantes de la región. Relájate en la famosa Grace Bay en las Islas Turcas y Caicos, conocida por sus aguas turquesas y su arena blanca como el azúcar. Explora la vida submarina en Playa Flamenco, Puerto Rico, o disfruta de la exclusividad de las playas privadas en las Islas Vírgenes Británicas. Cada destino ofrece algo único, ya sea snorkel, tranquilidad o vibrantes bares de playa. Además, te brindamos consejos para planificar tu viaje, desde las mejores temporadas hasta actividades imperdibles en cada lugar."
+          >
+            <div class="articulos__contenido">
+              <h3 class="articulos__titulo">Las Mejores Playas del Caribe</h3>
+              <p>
+                Relájate en las aguas cristalinas y arenas blancas de las
+                mejores playas del Caribe. Perfecto para unas vacaciones
+                inolvidables.
+              </p>
+            </div>
+            <div class="articulos__imagen-container">
+              <img
+                class="articulos__imagen"
+                src="assets/img/articulos/img/playa.jpg"
+                alt="Playas del Caribe"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="articulos__lista"
+          data-categoria="musica"
+          style="display: none"
+        >
+          <div
+            class="articulos__item"
+            data-titulo="La Revolución del Rock"
+            data-descripcion-larga="El rock es más que un género musical; es un movimiento cultural que cambió la forma en que el mundo experimenta la música. Desde sus raíces en los años 50 con figuras icónicas como Elvis Presley, hasta su evolución en los 70 con bandas como Led Zeppelin y Pink Floyd, el rock ha definido generaciones. Este artículo profundiza en cómo el rock desafió las normas sociales, dio voz a movimientos políticos y se convirtió en el soundtrack de cambios históricos. También exploramos su influencia en géneros modernos como el punk, el grunge y el indie."
+          >
+            <div class="articulos__contenido">
+              <h3 class="articulos__titulo">La Revolución del Rock</h3>
+              <p class="articulos__descripcion">
+                >Explora cómo el rock transformó la industria musical y sigue
+                siendo un género icónico en la actualidad.
+              </p>
+            </div>
+            <div class="articulos__imagen-container">
+              <img
+                class="articulos__imagen"
+                src="assets/img/articulos/img/rock.jpg"
+                alt="Revolución del Rock"
+              />
+            </div>
+          </div>
+
+          <div
+            class="articulos__item"
+            data-titulo="Instrumentos Inolvidables"
+            data-descripcion-larga="La historia de la música está llena de instrumentos que dejaron una huella imborrable en la industria. Desde la mítica guitarra Gibson Les Paul, que definió el sonido del rock, hasta el piano Steinway, utilizado en conciertos clásicos, cada instrumento cuenta una historia. Este artículo también destaca innovaciones modernas como los sintetizadores Moog, que revolucionaron la música electrónica, y las baterías electrónicas que transformaron el ritmo en géneros como el pop y el hip-hop. Aprende sobre los músicos que llevaron estos instrumentos al estrellato y su impacto en la música global."
+          >
+            <div class="articulos__contenido">
+              <h3 class="articulos__titulo">Instrumentos Inolvidables</h3>
+              <p class="articulos__descripcion">
+                Un recorrido por los instrumentos que marcaron la historia de la
+                música, desde guitarras legendarias hasta pianos icónicos.
+              </p>
+            </div>
+            <div class="articulos__imagen-container">
+              <img
+                class="articulos__imagen"
+                src="assets/img/articulos/img/instrumentos.jpg"
+                alt="Instrumentos Inolvidables"
+              />
+            </div>
+          </div>
+
+          <div
+            class="articulos__item"
+            data-titulo="Los Mejores Álbumes de la Década"
+            data-descripcion-larga="Los últimos diez años han sido testigos de una explosión de creatividad en la música, con álbumes que definieron nuestra era. Este artículo analiza trabajos emblemáticos como 'To Pimp a Butterfly' de Kendrick Lamar, que redefinió el hip-hop, y '25' de Adele, que conmovió al mundo con su poderosa voz. También exploramos cómo artistas como Billie Eilish y Taylor Swift innovaron en géneros como el pop y el folk. Descubre qué hace que estos álbumes sean tan influyentes y cómo reflejan los cambios culturales y sociales de nuestra época."
+          >
+            <div class="articulos__contenido">
+              <h3 class="articulos__titulo">
+                Los Mejores Álbumes de la Década
+              </h3>
+              <p class="articulos__descripcion">
+                Descubre los discos que definieron los últimos diez años, con
+                artistas que dejaron su huella en la historia.
+              </p>
+            </div>
+            <div class="articulos__imagen-container">
+              <img
+                class="articulos__imagen"
+                src="assets/img/articulos/img/musica_decada.jpg"
+                alt="Mejores Álbumes"
+              />
+            </div>
+          </div>
+
+          <div
+            class="articulos__item"
+            data-titulo="Festivales Musicales Imprescindibles"
+            data-descripcion-larga="Los festivales musicales no solo son eventos de entretenimiento, sino experiencias culturales únicas que reúnen a miles de personas. Desde el místico Glastonbury en Inglaterra, con su ambiente bohemio y legendarias actuaciones, hasta Coachella en California, conocido por su fusión de música, arte y moda, estos festivales han redefinido cómo vivimos la música en vivo. Este artículo también explora festivales emergentes en América Latina, como el Vive Latino, y cómo están transformando la escena musical global. Descubre consejos para disfrutar al máximo de estos eventos, desde qué llevar hasta cómo planificar tu experiencia."
+          >
+            <div class="articulos__contenido">
+              <h3 class="articulos__titulo">
+                Festivales Musicales Imprescindibles
+              </h3>
+              <p class="articulos__descripcion">
+                Desde Coachella hasta Glastonbury, conoce los festivales más
+                famosos...
+              </p>
+            </div>
+            <div class="articulos__imagen-container">
+              <img
+                class="articulos__imagen"
+                src="assets/img/articulos/img/festivales.jpg"
+                alt="Festivales Musicales"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="articulos__lista"
+          data-categoria="peliculas"
+          style="display: none"
+        >
+          <div
+            class="articulos__item"
+            data-titulo="Las Mejores Películas del 2025"
+            data-descripcion-larga="El 2025 ha sido un año impresionante para los amantes del cine, con películas que han cautivado tanto a críticos como a espectadores. Entre las más destacadas están las secuelas de grandes franquicias, como la esperada 'Guardianes del Multiverso', que llevó los efectos visuales a un nuevo nivel, y 'Misión Imposible: Rescate Final', que redefine el género de acción. También se estrenaron películas independientes como 'El Camino de la Luz', que sorprendió con una narrativa emocional y actuaciones memorables. Este artículo repasa las producciones más importantes del año, analizando sus temas, impacto cultural y éxito en taquilla."
+          >
+            <div class="articulos__contenido">
+              <h3 class="articulos__titulo">Las Mejores Películas del 2025</h3>
+              <p class="articulos__descripcion">
+                Descubre las películas que están marcando tendencia este año...
+              </p>
+            </div>
+            <div class="articulos__imagen-container">
+              <img
+                class="articulos__imagen"
+                src="assets/img/articulos/img/peliculas_2025.jpg"
+                alt="Películas del 2025"
+              />
+            </div>
+          </div>
+
+          <div
+            class="articulos__item"
+            data-titulo="Los Mejores Villanos del Cine"
+            data-descripcion-larga="Desde el maquiavélico Hannibal Lecter hasta el carismático Joker, los villanos del cine han dejado una marca imborrable en la cultura popular. Este artículo hace un recorrido por los antagonistas más memorables, explorando qué los hace tan fascinantes. Destacamos villanos clásicos como Darth Vader, cuya redención sorprendió a todos, y personajes más recientes como Thanos, quien redefinió el concepto de maldad con motivaciones complejas. También analizamos cómo los villanos se han convertido en protagonistas en películas como 'Joker' de 2019, cambiando la perspectiva del público."
+          >
+            <div class="articulos__contenido">
+              <h3 class="articulos__titulo">Los Mejores Villanos del Cine</h3>
+              <p class="articulos__descripcion">
+                Un recorrido por los personajes más malvados y memorables...
+              </p>
+            </div>
+            <div class="articulos__imagen-container">
+              <img
+                class="articulos__imagen"
+                src="assets/img/articulos/img/villanos.jpg"
+                alt="Villanos del Cine"
+              />
+            </div>
+          </div>
+
+          <div
+            class="articulos__item"
+            data-titulo="Películas Animadas que Marcaron Generaciones"
+            data-descripcion-larga="Las películas animadas han sido un puente entre generaciones, transmitiendo valores universales y emociones profundas. Desde los clásicos de Disney como 'El Rey León' y 'Blanca Nieves', hasta las obras maestras modernas como 'Intensamente' y 'Spider-Man: Un Nuevo Universo', estas producciones han elevado el arte de la animación. Este artículo analiza cómo estas películas combinan narrativa, música y diseño visual para crear historias inolvidables. Además, exploramos su impacto cultural y cómo han influido en la industria del cine y en la vida de millones de personas."
+          >
+            <div class="articulos__contenido">
+              <h3 class="articulos__titulo">
+                Películas Animadas que Marcaron Generaciones
+              </h3>
+              <p class="articulos__descripcion">
+                Desde los clásicos de Disney hasta las últimas joyas de Pixar...
+              </p>
+            </div>
+            <div class="articulos__imagen-container">
+              <img
+                class="articulos__imagen"
+                src="assets/img/articulos/img/peliculas_animadas.jpg"
+                alt="Películas Animadas"
+              />
+            </div>
+          </div>
+
+          <div
+            class="articulos__item"
+            data-titulo="Clásicos del Cine que Nunca Pasan de Moda"
+            data-descripcion-larga="Algunas películas trascienden el tiempo y siguen cautivando al público generación tras generación. Este artículo destaca títulos como 'Casablanca', con su icónica frase 'Siempre nos quedará París', y 'El Padrino', que redefinió el cine de gánsteres. También mencionamos obras de ciencia ficción como '2001: Una Odisea del Espacio', que marcó un antes y un después en el género, y 'Lo que el Viento se Llevó', con su poderosa narrativa épica. Exploramos por qué estas películas siguen siendo relevantes hoy en día y cómo influenciaron a los cineastas modernos."
+          >
+            <div class="articulos__contenido">
+              <h3 class="articulos__titulo">
+                Clásicos del Cine que Nunca Pasan de Moda
+              </h3>
+              <p class="articulos__descripcion">
+                Una lista de películas clásicas que siguen cautivando al
+                público...
+              </p>
+            </div>
+            <div class="articulos__imagen-container">
+              <img
+                class="articulos__imagen"
+                src="assets/img/articulos/img/clasicos_cine.webp"
+                alt="Clásicos del Cine"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Modal -->
-    <div id="modal" class="modal" style="display: none;">
-        <div class="modal__contenido">
-            <span class="modal__cerrar">&times;</span>
-            <img id="modal__imagen" class="modal__imagen" src="" alt="Imagen del Artículo">
-            <h3 id="modal__titulo" class="modal__titulo"></h3>
-            <p id="modal__descripcion" class="modal__descripcion"></p>
-        </div>
+    <div id="modal" class="modal" style="display: none">
+      <div class="modal__contenido">
+        <span class="modal__cerrar">&times;</span>
+        <img
+          id="modal__imagen"
+          class="modal__imagen"
+          src=""
+          alt="Imagen del Artículo"
+        />
+        <h3 id="modal__titulo" class="modal__titulo"></h3>
+        <p id="modal__descripcion" class="modal__descripcion"></p>
+      </div>
     </div>
 
     <!-- Pie de página -->
     <footer class="pie-de-pagina">
-        <p class="pie-de-pagina__texto">&copy; 2025 Blog Personal. Todos los derechos reservados.</p>
-        <ul class="pie-de-pagina__lista">
-            <li class="pie-de-pagina__item"><a href="#" class="pie-de-pagina__enlace">Política de Privacidad</a></li>
-            <li class="pie-de-pagina__item"><a href="#" class="pie-de-pagina__enlace">Términos y Condiciones</a></li>
-        </ul>
+      <p class="pie-de-pagina__texto">
+        &copy; 2025 Blog Personal. Todos los derechos reservados.
+      </p>
+      <ul class="pie-de-pagina__lista">
+        <li class="pie-de-pagina__item">
+          <a href="#" class="pie-de-pagina__enlace">Política de Privacidad</a>
+        </li>
+        <li class="pie-de-pagina__item">
+          <a href="#" class="pie-de-pagina__enlace">Términos y Condiciones</a>
+        </li>
+      </ul>
     </footer>
-</body>
-
+  </body>
 </html>

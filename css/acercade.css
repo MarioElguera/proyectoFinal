@@ -1,93 +1,93 @@
 /* Estilos Generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f5f5f5;
 }
 
 /* Sección "Acerca" */
 .acerca {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    background-color: #fff;
-    margin: 2rem auto;
-    max-width: 900px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #fff;
+  margin: 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 .acerca__contenido {
-    flex: 1;
-    padding-right: 1rem;
+  flex: 1;
+  padding-right: 1rem;
 }
 
 .acerca__titulo {
-    color: #333;
-    margin-bottom: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
 }
 
 .acerca__descripcion {
-    color: #555;
-    margin-bottom: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
 }
 
 .acerca__descripcion strong {
-    color: #1877f2;
+  color: #1877f2;
 }
 
 .acerca__imagen-container img {
-    max-width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Sección Valores */
 .valores {
-    background: #fff;
-    padding: 2rem;
-    margin: 2rem auto;
-    max-width: 900px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+  background: #fff;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 .valores__titulo {
-    color: #333;
-    margin-bottom: 1rem;
-    text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .valores__lista {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
 }
 
 .valores__item {
-    margin-bottom: 1rem;
-    padding-left: 1.5rem;
-    position: relative;
-    color: #555;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #555;
 }
 
 .valores__item::before {
-    content: "•";
-    color: #1877f2;
-    position: absolute;
-    left: 0;
-    font-size: 1.5rem;
-    line-height: 1;
+  content: "•";
+  color: #1877f2;
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
 /* Footer */
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
 }

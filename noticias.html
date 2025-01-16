@@ -1,174 +1,216 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noticias - Blog</title>
-    <link rel="stylesheet" href="css/inicio.css">
-    <link rel="stylesheet" href="css/noticias.css">
+    <link rel="stylesheet" href="css/inicio.css" />
+    <link rel="stylesheet" href="css/noticias.css" />
     <script src="js/noticias.js" defer></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="encabezado">
-        <div class="encabezado__logo">
-            <h1>M. E.</h1>
-        </div>
-        <button class="encabezado__menu-toggle" aria-label="Abrir menú">&#9776;</button>
-        <nav class="encabezado__navegacion">
-            <ul class="encabezado__lista">
-                <li class="encabezado__elemento"><a href="inicio.html" class="encabezado__enlace">INICIO</a></li>
-                <li class="encabezado__elemento"><a href="categorias.html" class="encabezado__enlace">CATEGORÍAS</a>
-                </li>
-                <li class="encabezado__elemento"><a href="noticias.html" class="encabezado__enlace">NOTICIAS</a></li>
-                <li class="encabezado__elemento"><a href="acerca.html" class="encabezado__enlace">ACERCA DE</a></li>
-                <li class="encabezado__elemento"><a href="contacto.html" class="encabezado__enlace">CONTACTO</a></li>
-            </ul>
-        </nav>
+      <div class="encabezado__logo">
+        <h1>M. E.</h1>
+      </div>
+      <button class="encabezado__menu-toggle" aria-label="Abrir menú">
+        &#9776;
+      </button>
+      <nav class="encabezado__navegacion">
+        <ul class="encabezado__lista">
+          <li class="encabezado__elemento">
+            <a href="inicio.html" class="encabezado__enlace">INICIO</a>
+          </li>
+          <li class="encabezado__elemento">
+            <a href="categorias.html" class="encabezado__enlace">CATEGORÍAS</a>
+          </li>
+          <li class="encabezado__elemento">
+            <a href="noticias.html" class="encabezado__enlace">NOTICIAS</a>
+          </li>
+          <li class="encabezado__elemento">
+            <a href="acerca.html" class="encabezado__enlace">ACERCA DE</a>
+          </li>
+          <li class="encabezado__elemento">
+            <a href="contacto.html" class="encabezado__enlace">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section class="noticias">
-            <h1 class="noticias__titulo">Últimas Noticias</h1>
-            <p class="noticias__descripcion">Mantente informado con lo más reciente de música, fútbol, películas y
-                viajes.</p>
-            <div class="noticias__acordeon">
-                <!-- Música -->
-                <div class="acordeon__item">
-                    <button class="acordeon__tab">Música</button>
-                    <div class="acordeon__content">
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Metallica anuncia nueva gira mundial</a></h3>
-                            <p>La banda regresa con su álbum más esperado.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Lanzamiento sorpresa de Green Day</a></h3>
-                            <p>El disco ya es un éxito en plataformas digitales.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Slipknot prepara un concierto épico</a></h3>
-                            <p>Los fanáticos ya pueden adquirir boletos.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Coldplay extiende su gira mundial</a></h3>
-                            <p>Conciertos adicionales en Europa y América Latina.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Nirvana: reedición especial de su álbum icónico</a></h3>
-                            <p>Incluye material nunca antes visto.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Michael Jackson sigue rompiendo récords</a></h3>
-                            <p>Su legado permanece más vivo que nunca.</p>
-                        </article>
-                    </div>
-                </div>
-
-                <!-- Fútbol -->
-                <div class="acordeon__item">
-                    <button class="acordeon__tab">Fútbol</button>
-                    <div class="acordeon__content">
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">La Liga: Real Madrid vs Barcelona</a></h3>
-                            <p>Todo listo para el próximo clásico español.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Cristiano Ronaldo alcanza 850 goles</a></h3>
-                            <p>Un hito histórico en el fútbol profesional.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Lionel Messi sorprende con un hat-trick</a></h3>
-                            <p>Su actuación dejó boquiabiertos a los fanáticos.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Mundial 2026: Preparativos en marcha</a></h3>
-                            <p>Se esperan grandes innovaciones en los estadios.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Neymar lidera a Brasil en un partido inolvidable</a></h3>
-                            <p>La estrella demuestra su talento una vez más.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">La Champions League regresa con sorpresas</a></h3>
-                            <p>¿Podrá el campeón defender su título?</p>
-                        </article>
-                    </div>
-                </div>
-
-                <!-- Películas -->
-                <div class="acordeon__item">
-                    <button class="acordeon__tab">Películas</button>
-                    <div class="acordeon__content">
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Marvel lanza el tráiler de su próxima película</a></h3>
-                            <p>El universo cinematográfico sigue creciendo.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Premios Oscar: las nominaciones más esperadas</a></h3>
-                            <p>Grandes sorpresas en la lista de este año.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Estreno mundial de Avatar 3</a></h3>
-                            <p>Los fans han esperado más de una década.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">El cine español brilla con su nueva producción</a></h3>
-                            <p>Reconocimiento internacional para una película independiente.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Star Wars regresa con una nueva trilogía</a></h3>
-                            <p>El universo de la Fuerza se expande aún más.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Christopher Nolan deslumbra con su nuevo proyecto</a></h3>
-                            <p>Una película que promete romper esquemas.</p>
-                        </article>
-                    </div>
-                </div>
-
-                <!-- Viajes -->
-                <div class="acordeon__item">
-                    <button class="acordeon__tab">Viajes</button>
-                    <div class="acordeon__content">
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Los destinos más visitados en 2025</a></h3>
-                            <p>Ciudades que no puedes perderte este año.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">10 playas paradisíacas para desconectar</a></h3>
-                            <p>El lugar perfecto para tus próximas vacaciones.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Europa: los mejores tours en tren</a></h3>
-                            <p>Descubre paisajes increíbles con comodidad.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Tips para viajar barato y con estilo</a></h3>
-                            <p>Cómo ahorrar y disfrutar al máximo tu viaje.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Las ciudades más fotografiadas del mundo</a></h3>
-                            <p>Lugares que no pueden faltar en tu álbum.</p>
-                        </article>
-                        <article class="acordeon__articulo">
-                            <h3><a href="#">Aventura en la Patagonia</a></h3>
-                            <p>Explora la naturaleza más salvaje.</p>
-                        </article>
-                    </div>
-                </div>
+      <section class="noticias">
+        <h1 class="noticias__titulo">Últimas Noticias</h1>
+        <p class="noticias__descripcion">
+          Mantente informado con lo más reciente de música, fútbol, películas y
+          viajes.
+        </p>
+        <div class="noticias__acordeon">
+          <!-- Música -->
+          <div class="acordeon__item">
+            <button class="acordeon__tab">Música</button>
+            <div class="acordeon__content">
+              <article class="acordeon__articulo">
+                <h3><a href="#">Metallica anuncia nueva gira mundial</a></h3>
+                <p>La banda regresa con su álbum más esperado.</p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3><a href="#">Lanzamiento sorpresa de Green Day</a></h3>
+                <p>El disco ya es un éxito en plataformas digitales.</p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3><a href="#">Slipknot prepara un concierto épico</a></h3>
+                <p>Los fanáticos ya pueden adquirir boletos.</p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3><a href="#">Coldplay extiende su gira mundial</a></h3>
+                <p>Conciertos adicionales en Europa y América Latina.</p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3>
+                  <a href="#"
+                    >Nirvana: reedición especial de su álbum icónico</a
+                  >
+                </h3>
+                <p>Incluye material nunca antes visto.</p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3><a href="#">Michael Jackson sigue rompiendo récords</a></h3>
+                <p>Su legado permanece más vivo que nunca.</p>
+              </article>
             </div>
-        </section>
+          </div>
+
+          <!-- Fútbol -->
+          <div class="acordeon__item">
+            <button class="acordeon__tab">Fútbol</button>
+            <div class="acordeon__content">
+              <article class="acordeon__articulo">
+                <h3><a href="#">La Liga: Real Madrid vs Barcelona</a></h3>
+                <p>Todo listo para el próximo clásico español.</p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3><a href="#">Cristiano Ronaldo alcanza 850 goles</a></h3>
+                <p>Un hito histórico en el fútbol profesional.</p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3><a href="#">Lionel Messi sorprende con un hat-trick</a></h3>
+                <p>Su actuación dejó boquiabiertos a los fanáticos.</p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3><a href="#">Mundial 2026: Preparativos en marcha</a></h3>
+                <p>Se esperan grandes innovaciones en los estadios.</p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3>
+                  <a href="#"
+                    >Neymar lidera a Brasil en un partido inolvidable</a
+                  >
+                </h3>
+                <p>La estrella demuestra su talento una vez más.</p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3>
+                  <a href="#">La Champions League regresa con sorpresas</a>
+                </h3>
+                <p>¿Podrá el campeón defender su título?</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Películas -->
+          <div class="acordeon__item">
+            <button class="acordeon__tab">Películas</button>
+            <div class="acordeon__content">
+              <article class="acordeon__articulo">
+                <h3>
+                  <a href="#">Marvel lanza el tráiler de su próxima película</a>
+                </h3>
+                <p>El universo cinematográfico sigue creciendo.</p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3>
+                  <a href="#">Premios Oscar: las nominaciones más esperadas</a>
+                </h3>
+                <p>Grandes sorpresas en la lista de este año.</p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3><a href="#">Estreno mundial de Avatar 3</a></h3>
+                <p>Los fans han esperado más de una década.</p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3>
+                  <a href="#">El cine español brilla con su nueva producción</a>
+                </h3>
+                <p>
+                  Reconocimiento internacional para una película independiente.
+                </p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3>
+                  <a href="#">Star Wars regresa con una nueva trilogía</a>
+                </h3>
+                <p>El universo de la Fuerza se expande aún más.</p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3>
+                  <a href="#"
+                    >Christopher Nolan deslumbra con su nuevo proyecto</a
+                  >
+                </h3>
+                <p>Una película que promete romper esquemas.</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Viajes -->
+          <div class="acordeon__item">
+            <button class="acordeon__tab">Viajes</button>
+            <div class="acordeon__content">
+              <article class="acordeon__articulo">
+                <h3><a href="#">Los destinos más visitados en 2025</a></h3>
+                <p>Ciudades que no puedes perderte este año.</p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3><a href="#">10 playas paradisíacas para desconectar</a></h3>
+                <p>El lugar perfecto para tus próximas vacaciones.</p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3><a href="#">Europa: los mejores tours en tren</a></h3>
+                <p>Descubre paisajes increíbles con comodidad.</p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3><a href="#">Tips para viajar barato y con estilo</a></h3>
+                <p>Cómo ahorrar y disfrutar al máximo tu viaje.</p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3>
+                  <a href="#">Las ciudades más fotografiadas del mundo</a>
+                </h3>
+                <p>Lugares que no pueden faltar en tu álbum.</p>
+              </article>
+              <article class="acordeon__articulo">
+                <h3><a href="#">Aventura en la Patagonia</a></h3>
+                <p>Explora la naturaleza más salvaje.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="pie-de-pagina">
-        <p class="pie-de-pagina__texto">&copy; 2025 Blog Personal. Todos los derechos reservados.</p>
-        <ul class="pie-de-pagina__lista">
-            <li class="pie-de-pagina__item"><a href="#" class="pie-de-pagina__enlace">Política de Privacidad</a></li>
-            <li class="pie-de-pagina__item"><a href="#" class="pie-de-pagina__enlace">Términos y Condiciones</a></li>
-        </ul>
+      <p class="pie-de-pagina__texto">
+        &copy; 2025 Blog Personal. Todos los derechos reservados.
+      </p>
+      <ul class="pie-de-pagina__lista">
+        <li class="pie-de-pagina__item">
+          <a href="#" class="pie-de-pagina__enlace">Política de Privacidad</a>
+        </li>
+        <li class="pie-de-pagina__item">
+          <a href="#" class="pie-de-pagina__enlace">Términos y Condiciones</a>
+        </li>
+      </ul>
     </footer>
-</body>
-
+  </body>
 </html>

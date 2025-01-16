@@ -1,130 +1,231 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio - Blog</title>
-    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/inicio.css" />
     <script src="js/inicio.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="encabezado">
-        <div class="encabezado__logo">
-            <h1>M. E.</h1>
-        </div>
-        <button class="encabezado__menu-toggle" aria-label="Abrir menú">&#9776;</button>
-        <nav class="encabezado__navegacion">
-            <ul class="encabezado__lista">
-                <li class="encabezado__elemento"><a href="inicio.html" class="encabezado__enlace">INICIO</a></li>
-                <li class="encabezado__elemento"><a href="categorias.html" class="encabezado__enlace">CATEGORÍAS</a>
-                </li>
-                <li class="encabezado__elemento"><a href="noticias.html" class="encabezado__enlace">NOTICIAS</a></li>
-                <li class="encabezado__elemento"><a href="acerca.html" class="encabezado__enlace">ACERCA DE</a></li>
-                <li class="encabezado__elemento"><a href="contacto.html" class="encabezado__enlace">CONTACTO</a></li>
-            </ul>
-        </nav>
+      <div class="encabezado__logo">
+        <h1>M. E.</h1>
+      </div>
+      <button class="encabezado__menu-toggle" aria-label="Abrir menú">
+        &#9776;
+      </button>
+      <nav class="encabezado__navegacion">
+        <ul class="encabezado__lista">
+          <li class="encabezado__elemento">
+            <a href="inicio.html" class="encabezado__enlace">INICIO</a>
+          </li>
+          <li class="encabezado__elemento">
+            <a href="categorias.html" class="encabezado__enlace">CATEGORÍAS</a>
+          </li>
+          <li class="encabezado__elemento">
+            <a href="noticias.html" class="encabezado__enlace">NOTICIAS</a>
+          </li>
+          <li class="encabezado__elemento">
+            <a href="acerca.html" class="encabezado__enlace">ACERCA DE</a>
+          </li>
+          <li class="encabezado__elemento">
+            <a href="contacto.html" class="encabezado__enlace">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section class="banner">
-        <div class="banner__deslizador">
-            <img src="assets/img/inicio/slider_concierto.jpeg" alt="Imagen 1" class="banner__imagen">
-            <img src="assets/img/inicio/slider_futbol.jpg" alt="Imagen 2" class="banner__imagen">
-            <img src="assets/img/inicio/slider_peliculas_sp.jpg" alt="Imagen 3" class="banner__imagen">
-            <img src="assets/img/inicio/slider_vinilos.jpg" alt="Imagen 4" class="banner__imagen">
-        </div>
-        <div class="banner__controles">
-            <button class="banner__control banner__control--anterior" aria-label="Anterior">&#8249;</button>
-            <button class="banner__control banner__control--siguiente" aria-label="Siguiente">&#8250;</button>
-        </div>
-        <div class="banner__contenido">
-            <h1 class="banner__titulo">Bienvenido a Mi Blog</h1>
-            <p class="banner__descripcion">Explora lo mejor del fútbol, películas, música y conciertos.</p>
-        </div>
+      <div class="banner__deslizador">
+        <img
+          src="assets/img/inicio/slider_concierto.jpeg"
+          alt="Imagen 1"
+          class="banner__imagen"
+        />
+        <img
+          src="assets/img/inicio/slider_futbol.jpg"
+          alt="Imagen 2"
+          class="banner__imagen"
+        />
+        <img
+          src="assets/img/inicio/slider_peliculas_sp.jpg"
+          alt="Imagen 3"
+          class="banner__imagen"
+        />
+        <img
+          src="assets/img/inicio/slider_vinilos.jpg"
+          alt="Imagen 4"
+          class="banner__imagen"
+        />
+      </div>
+      <div class="banner__controles">
+        <button
+          class="banner__control banner__control--anterior"
+          aria-label="Anterior"
+        >
+          &#8249;
+        </button>
+        <button
+          class="banner__control banner__control--siguiente"
+          aria-label="Siguiente"
+        >
+          &#8250;
+        </button>
+      </div>
+      <div class="banner__contenido">
+        <h1 class="banner__titulo">Bienvenido a Mi Blog</h1>
+        <p class="banner__descripcion">
+          Explora lo mejor del fútbol, películas, música y conciertos.
+        </p>
+      </div>
     </section>
 
     <!-- Artículos Destacados -->
     <section class="articulos-destacados">
-        <h2 class="articulos-destacados__titulo">Artículos Destacados</h2>
-        <div class="articulos-destacados__galeria">
-            <article class="articulos-destacados__item">
-                <img src="assets/img/inicio/articulo_1.jpg" alt="Imagen del artículo 1"
-                    class="articulos-destacados__imagen">
-                <div class="articulos-destacados__descripcion">
-                    <h3 class="articulos-destacados__subtitulo">Los Mejores Goles en los Mundiales</h3>
-                    <p class="articulos-destacados__texto">"Desde el inicio de la Copa Mundial de la FIFA en 1930, los
-                        goles han sido el alma de este evento. Este artículo repasa los momentos más icónicos, como el
-                        gol de Diego Maradona conocido como la 'Mano de Dios' ..."
-                    </p>
-                    <a href="categorias.html" class="articulos-destacados__enlace">Leer más</a>
-                </div>
-            </article>
+      <h2 class="articulos-destacados__titulo">Artículos Destacados</h2>
+      <div class="articulos-destacados__galeria">
+        <article class="articulos-destacados__item">
+          <img
+            src="assets/img/inicio/articulo_1.jpg"
+            alt="Imagen del artículo 1"
+            class="articulos-destacados__imagen"
+          />
+          <div class="articulos-destacados__descripcion">
+            <h3 class="articulos-destacados__subtitulo">
+              Los Mejores Goles en los Mundiales
+            </h3>
+            <p class="articulos-destacados__texto">
+              "Desde el inicio de la Copa Mundial de la FIFA en 1930, los goles
+              han sido el alma de este evento. Este artículo repasa los momentos
+              más icónicos, como el gol de Diego Maradona conocido como la 'Mano
+              de Dios' ..."
+            </p>
+            <a href="categorias.html" class="articulos-destacados__enlace"
+              >Leer más</a
+            >
+          </div>
+        </article>
 
-            <article class="articulos-destacados__item">
-                <img src="assets/img/articulos/img/musica_decada.jpg" alt="Imagen del artículo 2"
-                    class="articulos-destacados__imagen">
-                <h3 class="articulos-destacados__subtitulo">Los Mejores Álbumes de la Década</h3>
-                <p class="articulos-destacados__texto">"Los últimos diez años han sido testigos de una explosión de creatividad en la música, con álbumes que definieron nuestra era."</p>
-                <a href="categorias.html" class="articulos-destacados__enlace">Leer más</a>
-            </article>
+        <article class="articulos-destacados__item">
+          <img
+            src="assets/img/articulos/img/musica_decada.jpg"
+            alt="Imagen del artículo 2"
+            class="articulos-destacados__imagen"
+          />
+          <h3 class="articulos-destacados__subtitulo">
+            Los Mejores Álbumes de la Década
+          </h3>
+          <p class="articulos-destacados__texto">
+            "Los últimos diez años han sido testigos de una explosión de
+            creatividad en la música, con álbumes que definieron nuestra era."
+          </p>
+          <a href="categorias.html" class="articulos-destacados__enlace"
+            >Leer más</a
+          >
+        </article>
 
-            <article class="articulos-destacados__item">
-                <img src="assets/img/articulos/img/aventura.jpg" alt="Música" class="articulos-destacados__imagen">
-                <h3 class="articulos-destacados__subtitulo">Los Mejores Destinos de 2025</h3>
-                <p class="articulos-destacados__texto">"Descubre los destinos más impresionantes para visitar este 2025.
-                    Desde las paradisíacas playas de Bora Bora, donde la arena blanca se combina con aguas
-                    cristalinas..."</p>
-                <a href="categorias.html" class="articulos-destacados__enlace">Leer más</a>
-            </article>
+        <article class="articulos-destacados__item">
+          <img
+            src="assets/img/articulos/img/aventura.jpg"
+            alt="Música"
+            class="articulos-destacados__imagen"
+          />
+          <h3 class="articulos-destacados__subtitulo">
+            Los Mejores Destinos de 2025
+          </h3>
+          <p class="articulos-destacados__texto">
+            "Descubre los destinos más impresionantes para visitar este 2025.
+            Desde las paradisíacas playas de Bora Bora, donde la arena blanca se
+            combina con aguas cristalinas..."
+          </p>
+          <a href="categorias.html" class="articulos-destacados__enlace"
+            >Leer más</a
+          >
+        </article>
 
-            <article class="articulos-destacados__item">
-                <img src="assets/img/articulos/img/peliculas_2025.jpg" alt="Imagen del artículo 4"
-                    class="articulos-destacados__imagen">
-                <h3 class="articulos-destacados__subtitulo">Los Mejores Villanos del Cine</h3>
-                <p class="articulos-destacados__texto">Desde el maquiavélico Hannibal Lecter hasta el carismático Joker,
-                    los villanos del cine han dejado una marca imborrable en la cultura popular. Este artículo hace un
-                    recorrido por los antagonistas más memorables, explorando qué los hace tan fascinantes...</p>
-                <a href="categorias.html" class="articulos-destacados__enlace">Leer más</a>
-            </article>
-        </div>
+        <article class="articulos-destacados__item">
+          <img
+            src="assets/img/articulos/img/peliculas_2025.jpg"
+            alt="Imagen del artículo 4"
+            class="articulos-destacados__imagen"
+          />
+          <h3 class="articulos-destacados__subtitulo">
+            Los Mejores Villanos del Cine
+          </h3>
+          <p class="articulos-destacados__texto">
+            Desde el maquiavélico Hannibal Lecter hasta el carismático Joker,
+            los villanos del cine han dejado una marca imborrable en la cultura
+            popular. Este artículo hace un recorrido por los antagonistas más
+            memorables, explorando qué los hace tan fascinantes...
+          </p>
+          <a href="categorias.html" class="articulos-destacados__enlace"
+            >Leer más</a
+          >
+        </article>
+      </div>
     </section>
 
     <!-- Testimonios -->
     <section class="testimonios">
-        <h2 class="testimonios__titulo">Lo que dicen nuestros lectores</h2>
-        <div class="testimonios__galeria">
-            <article class="testimonios__item">
-                <div class="testimonios__avatar">
-                    <img src="assets/img/inicio/usuario_1.jpg" alt="Usuario 1" class="testimonios__avatar-imagen">
-                </div>
-                <p class="testimonios__texto">"¡Increíble cómo este blog combina mi amor por el fútbol y la música! Me
-                    encantó el artículo sobre el regreso de los vinilos." - Juan P.</p>
-            </article>
-            <article class="testimonios__item">
-                <div class="testimonios__avatar">
-                    <img src="assets/img/inicio/usuario_2.jpg" alt="Usuario 2" class="testimonios__avatar-imagen">
-                </div>
-                <p class="testimonios__texto">"Gracias por compartir tus conocimientos sobre los mejores conciertos del
-                    año. ¡Espero no perderme el próximo!" - Carla G.</p>
-            </article>
-            <article class="testimonios__item">
-                <div class="testimonios__avatar">
-                    <img src="assets/img/inicio/usuario_3.jpg" alt="Usuario 3" class="testimonios__avatar-imagen">
-                </div>
-                <p class="testimonios__texto">"Me encanta el enfoque personal que le das a los artículos de fútbol.
-                    ¡Sigue así!" - Daniel T.</p>
-            </article>
-        </div>
+      <h2 class="testimonios__titulo">Lo que dicen nuestros lectores</h2>
+      <div class="testimonios__galeria">
+        <article class="testimonios__item">
+          <div class="testimonios__avatar">
+            <img
+              src="assets/img/inicio/perfil_sin_foto.png"
+              alt="Usuario 1"
+              class="testimonios__avatar-imagen"
+            />
+          </div>
+          <p class="testimonios__texto">
+            "¡Increíble cómo este blog combina mi amor por el fútbol y la
+            música! Me encantó el artículo sobre el regreso de los vinilos." -
+            Juan P.
+          </p>
+        </article>
+        <article class="testimonios__item">
+          <div class="testimonios__avatar">
+            <img
+              src="assets/img/inicio/perfil_sin_foto.png"
+              alt="Usuario 2"
+              class="testimonios__avatar-imagen"
+            />
+          </div>
+          <p class="testimonios__texto">
+            "Gracias por compartir tus conocimientos sobre los mejores
+            conciertos del año. ¡Espero no perderme el próximo!" - Carla G.
+          </p>
+        </article>
+        <article class="testimonios__item">
+          <div class="testimonios__avatar">
+            <img
+              src="assets/img/inicio/perfil_sin_foto.png"
+              alt="Usuario 3"
+              class="testimonios__avatar-imagen"
+            />
+          </div>
+          <p class="testimonios__texto">
+            "Me encanta el enfoque personal que le das a los artículos de
+            fútbol. ¡Sigue así!" - Daniel T.
+          </p>
+        </article>
+      </div>
     </section>
 
     <footer class="pie-de-pagina">
-        <p class="pie-de-pagina__texto">&copy; 2025 Blog Personal. Todos los derechos reservados.</p>
-        <ul class="pie-de-pagina__lista">
-            <li class="pie-de-pagina__item"><a href="#" class="pie-de-pagina__enlace">Política de Privacidad</a></li>
-            <li class="pie-de-pagina__item"><a href="#" class="pie-de-pagina__enlace">Términos y Condiciones</a></li>
-        </ul>
+      <p class="pie-de-pagina__texto">
+        &copy; 2025 Blog Personal. Todos los derechos reservados.
+      </p>
+      <ul class="pie-de-pagina__lista">
+        <li class="pie-de-pagina__item">
+          <a href="#" class="pie-de-pagina__enlace">Política de Privacidad</a>
+        </li>
+        <li class="pie-de-pagina__item">
+          <a href="#" class="pie-de-pagina__enlace">Términos y Condiciones</a>
+        </li>
+      </ul>
     </footer>
-</body>
-
+  </body>
 </html>
