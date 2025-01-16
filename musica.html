@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustos Musicales</title>
     <link rel="stylesheet" href="css/musica.css">
+    <script src="js/musica.js" defer></script>
+
 </head>
 
 <body>
@@ -50,20 +52,6 @@
         </ul>
     </footer>
 
-    <script>
-        const sectionArea = document.querySelector('section');
-
-        document.querySelectorAll('.band-list li').forEach(item => {
-            item.addEventListener('mouseover', () => {
-                const bgImage = item.getAttribute('data-bg');
-                sectionArea.style.backgroundImage = `url('${bgImage}')`;
-            });
-
-            item.addEventListener('mouseout', () => {
-                sectionArea.style.backgroundImage = '';
-            });
-        });
-    </script>
 </body>
 
 </html>
