@@ -9,41 +9,104 @@ menuToggle.addEventListener("click", () => {
 });
 
 // Slider banner - página principal ========================================================================================
-
 // Seleccionar elementos necesarios
 const slider = document.querySelector(".banner__deslizador");
 const images = document.querySelectorAll(".banner__imagen");
 const prevButton = document.querySelector(".banner__control--anterior");
 const nextButton = document.querySelector(".banner__control--siguiente");
+const banner = document.querySelector(".banner");
 
 let currentIndex = 0;
 const totalImages = images.length;
+let intervaloSlider;
+let timeoutReinicio;
+
+// Mostrar solo cuando las imágenes estén listas
+function esperarCargaDeImagenes() {
+  let imagenesCargadas = 0;
+
+  images.forEach((img) => {
+    img.onload = () => {
+      imagenesCargadas++;
+      img.classList.add("cargada");
+
+      if (imagenesCargadas === totalImages) {
+        banner.style.minHeight = "auto";
+        iniciarAutoSlider();
+        actualizarPosicionSlider();
+        ajustarAlturaSlider();
+      }
+    };
+
+    if (img.complete) {
+      img.onload();
+    }
+  });
+}
 
 // Función para actualizar la posición del slider
 function actualizarPosicionSlider() {
-  const offset = -currentIndex * 104; // Cada imagen ocupa el 100% del ancho
+  const offset = -currentIndex * 100;
   slider.style.transform = `translateX(${offset}%)`;
 }
 
 // Función para mover al siguiente slide
 function mostrarSiguienteSlide() {
-  currentIndex = (currentIndex + 1) % totalImages; // Volver al inicio si es el último
+  currentIndex = (currentIndex + 1) % totalImages;
   actualizarPosicionSlider();
+  reiniciarAutoSlider();
 }
 
 // Función para mover al slide anterior
 function mostrarSlideAnterior() {
-  currentIndex = (currentIndex - 1 + totalImages) % totalImages; // Volver al final si es el primero
+  currentIndex = (currentIndex - 1 + totalImages) % totalImages;
   actualizarPosicionSlider();
+  reiniciarAutoSlider();
 }
+
+// Función para iniciar el slider automático
+function iniciarAutoSlider() {
+  clearInterval(intervaloSlider); // Evita múltiples intervalos
+  intervaloSlider = setInterval(mostrarSiguienteSlide, 2000);
+}
+
+// Función para reiniciar el slider automático después de interacción
+function reiniciarAutoSlider() {
+  clearInterval(intervaloSlider); // Detiene el slider temporalmente
+  clearTimeout(timeoutReinicio); // Elimina cualquier reinicio anterior
+  timeoutReinicio = setTimeout(iniciarAutoSlider, 3000); // Reinicia después de 5s
+}
+
+// Ajustar altura en PC y móviles correctamente
+function ajustarAlturaSlider() {
+  const banner = document.querySelector(".banner");
+  const images = document.querySelectorAll(".banner__imagen");
+
+  if (window.innerWidth > 768) {
+    banner.style.maxHeight = "500px"; // En PC, máximo 500px
+  } else {
+    banner.style.maxHeight = "70vh"; // En móviles, ajusta al 70% de la pantalla
+  }
+
+  images.forEach((img) => {
+    img.style.height = banner.clientHeight + "px";
+  });
+}
+
+// Ajustar altura al cargar y al cambiar el tamaño
 
 // Event Listeners para botones
 nextButton.addEventListener("click", mostrarSiguienteSlide);
 prevButton.addEventListener("click", mostrarSlideAnterior);
+window.addEventListener("resize", ajustarAlturaSlider);
+document.addEventListener("DOMContentLoaded", ajustarAlturaSlider);
 
-// Slider automático cada 5 segundos
-setInterval(mostrarSiguienteSlide, 2000);
+// Iniciar la verificación de carga de imágenes
+document.addEventListener("DOMContentLoaded", () => {
+  esperarCargaDeImagenes();
+});
 
+// Testimonios - página principal ========================================================================================
 document.addEventListener("DOMContentLoaded", function () {
   const testimonios = document.querySelectorAll(".testimonios__item");
 
