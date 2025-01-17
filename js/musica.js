@@ -2,14 +2,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const bandas = document.querySelectorAll(".seccion-musica__lista li");
   const body = document.body;
 
-  bandas.forEach((banda) => {
-    banda.addEventListener("mouseenter", () => {
-      const imagenFondo = banda.getAttribute("data-bg");
-      body.style.background = `url('${imagenFondo}') center/cover no-repeat fixed`;
-    });
+  // Detectar si el usuario está en un dispositivo táctil (móvil)
+  const esMovil = "ontouchstart" in window || navigator.maxTouchPoints > 0;
 
-    banda.addEventListener("mouseleave", () => {
-      body.style.background = "#f5f5f5"; // Vuelve al fondo original
-    });
+  bandas.forEach((banda) => {
+    if (esMovil) {
+      // En móviles, cambiar fondo solo con 'click'
+      banda.addEventListener("click", () => cambiarFondo(banda));
+    } else {
+      // En PC, cambiar fondo con 'mouseenter' y 'mouseleave'
+      banda.addEventListener("mouseenter", () => cambiarFondo(banda));
+      banda.addEventListener("mouseleave", resetearFondo);
+    }
   });
+
+  function cambiarFondo(banda) {
+    const imagenFondo = banda.getAttribute("data-bg");
+    if (imagenFondo) {
+      body.style.background = `url('${imagenFondo}') center/cover no-repeat fixed`;
+    }
+  }
+
+  function resetearFondo() {
+    body.style.background = "#f5f5f5"; // Fondo original
+  }
 });

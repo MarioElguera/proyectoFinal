@@ -44,6 +44,8 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s;
   position: relative;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-in-out forwards;
 }
 
 .seccion-musica__lista li:hover {
@@ -67,6 +69,20 @@ body {
   transform: scaleX(1);
 }
 
+.seccion-musica__imagen {
+  width: 100%;
+  max-width: 400px; /* Ajusta el tamaño máximo según lo necesites */
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  opacity: 0; /* Ocultar la imagen inicialmente */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.seccion-musica__imagen.mostrar {
+  opacity: 1; /* Mostrar la imagen cuando se activa */
+}
+
 /* Animación de Aparición */
 @keyframes fadeInUp {
   from {
@@ -77,11 +93,6 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.seccion-musica__lista li {
-  opacity: 0;
-  animation: fadeInUp 0.8s ease-in-out forwards;
 }
 
 .seccion-musica__lista li:nth-child(1) {
@@ -168,5 +179,9 @@ body {
 
   .seccion-musica__contenedor {
     width: 100%;
+  }
+
+  .seccion-musica__lista li {
+    padding: 5px 0px;
   }
 }
