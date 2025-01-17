@@ -1,12 +1,15 @@
-const sectionArea = document.querySelector("section");
+document.addEventListener("DOMContentLoaded", () => {
+  const bandas = document.querySelectorAll(".seccion-musica__lista li");
+  const body = document.body;
 
-document.querySelectorAll(".band-list li").forEach((item) => {
-  item.addEventListener("mouseover", () => {
-    const bgImage = item.getAttribute("data-bg");
-    sectionArea.style.backgroundImage = `url('${bgImage}')`;
-  });
+  bandas.forEach((banda) => {
+    banda.addEventListener("mouseenter", () => {
+      const imagenFondo = banda.getAttribute("data-bg");
+      body.style.background = `url('${imagenFondo}') center/cover no-repeat fixed`;
+    });
 
-  item.addEventListener("mouseout", () => {
-    sectionArea.style.backgroundImage = "";
+    banda.addEventListener("mouseleave", () => {
+      body.style.background = "#f5f5f5"; // Vuelve al fondo original
+    });
   });
 });

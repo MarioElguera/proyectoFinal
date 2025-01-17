@@ -1,35 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gustos Musicales</title>
     <link rel="stylesheet" href="css/musica.css" />
+    <link rel="stylesheet" href="css/inicio.css" />
     <script src="js/musica.js" defer></script>
   </head>
 
   <body>
-    <header>
-      <div class="logo">
+    <header class="encabezado">
+      <div class="encabezado__logo">
         <h1>M. E.</h1>
       </div>
-      <nav>
-        <ul>
-          <li><a href="inicio.html">INICIO</a></li>
-          <li><a href="categorias.html">CATEGORÍAS</a></li>
-          <li><a href="noticias.html">NOTICIAS</a></li>
-          <li><a href="acerca.html">ACERCA DE</a></li>
-          <li><a href="contacto.html">CONTACTO</a></li>
+      <button class="encabezado__menu-toggle" aria-label="Abrir menú">
+        &#9776;
+      </button>
+      <nav class="encabezado__navegacion">
+        <ul class="encabezado__lista">
+          <li class="encabezado__elemento">
+            <a href="inicio.html" class="encabezado__enlace">INICIO</a>
+          </li>
+          <li class="encabezado__elemento">
+            <a href="categorias.html" class="encabezado__enlace">CATEGORÍAS</a>
+          </li>
+          <li class="encabezado__elemento">
+            <a href="noticias.html" class="encabezado__enlace">NOTICIAS</a>
+          </li>
+          <li class="encabezado__elemento">
+            <a href="acerca.html" class="encabezado__enlace">ACERCA DE</a>
+          </li>
+          <li class="encabezado__elemento">
+            <a href="contacto.html" class="encabezado__enlace">CONTACTO</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <section>
-      <h1 class="section-title">
+    <section class="seccion-musica">
+      <a href="acerca.html" class="boton-regresar">⬅</a>
+      <br />
+      <br />
+
+      <h1 class="seccion-musica__titulo">
         A continuación un listado de mis bandas favoritas:
       </h1>
-      <div class="container">
-        <ul class="band-list">
+      <div class="seccion-musica__contenedor">
+        <ul class="seccion-musica__lista">
           <li data-bg="assets/img/musica/metallica.png">Metallica</li>
           <li data-bg="assets/img/musica/greenDay.jpg">Green Day</li>
           <li data-bg="assets/img/musica/myChemicalRomance.jpg">
@@ -50,11 +68,17 @@
       </div>
     </section>
 
-    <footer>
-      <p>&copy; 2025 Blog Personal. Todos los derechos reservados.</p>
-      <ul>
-        <li><a href="#">Política de Privacidad</a></li>
-        <li><a href="#">Términos y Condiciones</a></li>
+    <footer class="pie-de-pagina">
+      <p class="pie-de-pagina__texto">
+        &copy; 2025 Blog Personal. Todos los derechos reservados.
+      </p>
+      <ul class="pie-de-pagina__lista">
+        <li class="pie-de-pagina__item">
+          <a href="#" class="pie-de-pagina__enlace">Política de Privacidad</a>
+        </li>
+        <li class="pie-de-pagina__item">
+          <a href="#" class="pie-de-pagina__enlace">Términos y Condiciones</a>
+        </li>
       </ul>
     </footer>
   </body>
