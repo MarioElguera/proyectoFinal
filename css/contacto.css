@@ -65,33 +65,3 @@ body {
 .contacto__formulario .formulario__boton:hover {
   background-color: #0056b3;
 }
-
-/* Sección de Redes Sociales */
-.redes-sociales {
-  text-align: center;
-  padding: 1rem;
-}
-
-.redes-sociales__titulo {
-  margin-bottom: 1rem;
-  color: #333;
-}
-
-.redes-sociales__lista {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.redes-sociales__lista .redes-sociales__item .redes-sociales__enlace {
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: #1877f2;
-  transition: color 0.3s;
-}
-
-.redes-sociales__lista .redes-sociales__item .redes-sociales__enlace:hover {
-  color: #0056b3;
-}
