@@ -10,34 +10,8 @@
     <script src="js/inicio.js" defer></script>
   </head>
 
-  <body>
-    <header class="encabezado">
-      <div class="encabezado__logo">
-        <h1>M. E.</h1>
-      </div>
-      <button class="encabezado__menu-toggle" aria-label="Abrir menú">
-        &#9776;
-      </button>
-      <nav class="encabezado__navegacion">
-        <ul class="encabezado__lista">
-          <li class="encabezado__elemento">
-            <a href="index.html" class="encabezado__enlace">INICIO</a>
-          </li>
-          <li class="encabezado__elemento">
-            <a href="categorias.html" class="encabezado__enlace">CATEGORÍAS</a>
-          </li>
-          <li class="encabezado__elemento">
-            <a href="noticias.html" class="encabezado__enlace">NOTICIAS</a>
-          </li>
-          <li class="encabezado__elemento">
-            <a href="acerca.html" class="encabezado__enlace">ACERCA DE</a>
-          </li>
-          <li class="encabezado__elemento">
-            <a href="contacto.html" class="encabezado__enlace">CONTACTO</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <body onload="incluirHTML()">
+    <div data-include="includes/header.html"></div>
 
     <main>
       <section class="noticias">
@@ -200,18 +174,6 @@
       </section>
     </main>
 
-    <footer class="pie-de-pagina">
-      <p class="pie-de-pagina__texto">
-        &copy; 2025 Blog Personal. Todos los derechos reservados.
-      </p>
-      <ul class="pie-de-pagina__lista">
-        <li class="pie-de-pagina__item">
-          <a href="#" class="pie-de-pagina__enlace">Política de Privacidad</a>
-        </li>
-        <li class="pie-de-pagina__item">
-          <a href="#" class="pie-de-pagina__enlace">Términos y Condiciones</a>
-        </li>
-      </ul>
-    </footer>
+    <div data-include="includes/footer.html"></div>
   </body>
 </html>

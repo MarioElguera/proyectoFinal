@@ -1,11 +1,25 @@
-// Seleccionar el botón de toggle y el menú de navegación
-const menuToggle = document.querySelector(".encabezado__menu-toggle");
-const navMenu = document.querySelector(".encabezado__navegacion");
+function incluirHTML() {
+  document.querySelectorAll("[data-include]").forEach((el) => {
+    fetch(el.getAttribute("data-include"))
+      .then((response) => response.text())
+      .then((data) => {
+        el.innerHTML = data;
 
-// Agregar un evento al botón de toggle
-menuToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("show");
-});
+        // ⚠️ Si es el header, asegurarse de ejecutar su script
+        if (el.getAttribute("data-include").includes("header.html")) {
+          const script = document.createElement("script");
+          script.src = "js/header.js";
+          script.defer = true;
+          script.onload = () =>
+            console.log("✅ header.js cargado correctamente.");
+          document.head.appendChild(script);
+        }
+      })
+      .catch((error) => console.error("Error cargando el archivo:", error));
+  });
+}
+
+document.addEventListener("DOMContentLoaded", incluirHTML);
 
 // Slider banner - página principal ========================================================================================
 const slider = document.querySelector(".banner__deslizador");
@@ -136,9 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-
   // Llamar a la función cada vez que se haga scroll
   window.addEventListener("scroll", mostrarTestimonios);
-
   mostrarTestimonios();
 });
