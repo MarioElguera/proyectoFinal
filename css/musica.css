@@ -145,7 +145,7 @@ body {
   transform: scale(1.1);
 }
 
-/* Estilos Responsivos */
+/* 📌 Para móviles */
 @media (max-width: 768px) {
   header nav {
     display: none;

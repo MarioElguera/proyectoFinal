@@ -231,7 +231,7 @@ header {
   }
 }
 
-/* Responsive */
+/* 📌 Para móviles */
 @media (max-width: 768px) {
   main {
     padding: 0;

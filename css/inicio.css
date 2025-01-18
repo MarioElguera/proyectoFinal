@@ -336,6 +336,7 @@ main {
   scrollbar-color: #1877f2 #f5f5f5;
 }
 
+/* 📌 Para móviles */
 @media (max-width: 768px) {
   .encabezado__navegacion {
     display: none;
