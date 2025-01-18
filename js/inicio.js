@@ -1,6 +1,5 @@
 function incluirHTML() {
   document.querySelectorAll("[data-include]").forEach((el) => {
-    console.log(el)
     fetch(el.getAttribute("data-include"))
       .then((response) => response.text())
       .then((data) => {
@@ -11,8 +10,6 @@ function incluirHTML() {
           const script = document.createElement("script");
           script.src = "js/header.js";
           script.defer = true;
-          script.onload = () =>
-            console.log("✅ header.js cargado correctamente.");
           document.head.appendChild(script);
         }
       })
