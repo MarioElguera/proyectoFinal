@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   categorias.forEach((categoria) => {
     categoria.addEventListener("click", () => {
-      // Ocultar todos los bloques de artículos
       articulosPorCategoria.forEach((articulos) => {
         articulos.style.display = "none";
         textInformativo.style.display = "none";
@@ -31,22 +30,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeBtn = modal.querySelector(".modal__cerrar");
   const articulos = document.querySelectorAll(".articulos__item");
 
-  // Abrir modal al hacer clic en un artículo
   articulos.forEach((articulo) => {
     articulo.addEventListener("click", () => {
       const titulo = articulo.getAttribute("data-titulo");
       const descripcionLarga = articulo.getAttribute("data-descripcion-larga");
       const imgSrc = articulo.querySelector("img").src;
 
-      // Configurar contenido del modal
       modalTitulo.textContent = titulo;
       modalDescripcion.textContent = descripcionLarga;
       modalImg.src = imgSrc;
 
-      // Mostrar modal
       modal.style.display = "flex";
 
-      // Restablecer el scroll del modal al inicio
       modalContent.scrollTop = 0;
     });
   });

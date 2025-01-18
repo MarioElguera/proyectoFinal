@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
       // En móviles, cambiar fondo solo con 'click'
       banda.addEventListener("click", () => cambiarFondo(banda));
     } else {
-      // En PC, cambiar fondo con 'mouseenter' y 'mouseleave'
       banda.addEventListener("mouseenter", () => cambiarFondo(banda));
       banda.addEventListener("mouseleave", resetearFondo);
     }
@@ -24,6 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function resetearFondo() {
-    body.style.background = "#f5f5f5"; // Fondo original
+    body.style.background = "#f5f5f5";
   }
 });
