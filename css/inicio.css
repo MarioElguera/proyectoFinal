@@ -1,4 +1,3 @@
-/* Estilos globales */
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +11,13 @@ body {
   background-color: #f5f5f5;
   margin: 0;
   font-family: monospace;
+}
+
+/* Main */
+main {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f5f5f5;
 }
 
 /* Encabezado */
@@ -67,11 +73,11 @@ body {
   position: relative;
   overflow: hidden;
   width: 100%;
-  min-height: 300px; /* Ajusta según tu diseño */
+  min-height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000; /* Fondo temporal mientras se cargan las imágenes */
+  background-color: #000;
 }
 
 .banner__imagen {
@@ -79,7 +85,7 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
-  opacity: 0; /* Ocultar la imagen mientras carga */
+  opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
 
@@ -90,10 +96,7 @@ body {
 }
 
 .banner__imagen.cargada {
-  opacity: 1; /* Mostrar la imagen después de que se haya cargado */
-}
-
-@media (max-width: 768px) {
+  opacity: 1;
 }
 
 .banner__controles {
@@ -364,13 +367,13 @@ body {
   }
 
   .banner {
-    height: auto; /* Permite ajuste dinámico */
+    height: auto;
   }
 
   .banner__imagen {
-    height: auto; /* Ajusta la altura automáticamente */
-    max-height: 80vh; /* Evita que sea demasiado grande */
-    object-fit: contain; /* Evita recortes en móviles */
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
   }
 
   .banner__control {

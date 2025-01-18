@@ -4,12 +4,10 @@ const navMenu = document.querySelector(".encabezado__navegacion");
 
 // Agregar un evento al botón de toggle
 menuToggle.addEventListener("click", () => {
-  // Alternar la clase "show" en el menú de navegación
   navMenu.classList.toggle("show");
 });
 
 // Slider banner - página principal ========================================================================================
-// Seleccionar elementos necesarios
 const slider = document.querySelector(".banner__deslizador");
 const images = document.querySelectorAll(".banner__imagen");
 const prevButton = document.querySelector(".banner__control--anterior");
@@ -66,15 +64,15 @@ function mostrarSlideAnterior() {
 
 // Función para iniciar el slider automático
 function iniciarAutoSlider() {
-  clearInterval(intervaloSlider); // Evita múltiples intervalos
+  clearInterval(intervaloSlider);
   intervaloSlider = setInterval(mostrarSiguienteSlide, 2000);
 }
 
 // Función para reiniciar el slider automático después de interacción
 function reiniciarAutoSlider() {
-  clearInterval(intervaloSlider); // Detiene el slider temporalmente
-  clearTimeout(timeoutReinicio); // Elimina cualquier reinicio anterior
-  timeoutReinicio = setTimeout(iniciarAutoSlider, 3000); // Reinicia después de 5s
+  clearInterval(intervaloSlider);
+  clearTimeout(timeoutReinicio);
+  timeoutReinicio = setTimeout(iniciarAutoSlider, 3000);
 }
 
 // Ajustar altura en PC y móviles correctamente
@@ -82,16 +80,26 @@ function ajustarAlturaSlider() {
   const banner = document.querySelector(".banner");
   const images = document.querySelectorAll(".banner__imagen");
 
+  if (!banner) return;
+
+  let altura;
   if (window.innerWidth > 768) {
-    banner.style.maxHeight = "500px"; // En PC, máximo 500px
+    altura = 350;
   } else {
-    banner.style.maxHeight = "70vh"; // En móviles, ajusta al 70% de la pantalla
+    altura = window.innerHeight * 0.4;
   }
 
+  banner.style.height = `${altura}px`;
+
   images.forEach((img) => {
-    img.style.height = banner.clientHeight + "px";
+    img.style.height = `${altura}px`;
   });
 }
+
+// Ejecutar cuando la página cargue completamente y en cambios de tamaño
+window.addEventListener("load", ajustarAlturaSlider);
+window.addEventListener("resize", ajustarAlturaSlider);
+document.addEventListener("DOMContentLoaded", ajustarAlturaSlider);
 
 // Ajustar altura al cargar y al cambiar el tamaño
 
@@ -111,14 +119,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const testimonios = document.querySelectorAll(".testimonios__item");
 
   function mostrarTestimonios() {
-    const windowHeight = window.innerHeight; // Altura de la ventana
-    const scrollTop = window.scrollY; // Posición actual del scroll
+    const windowHeight = window.innerHeight;
+    const scrollTop = window.scrollY;
 
     testimonios.forEach(function (testimonio) {
-      const testimonioTop = testimonio.getBoundingClientRect().top + scrollTop; // Distancia desde el top del documento
-      const testimonioBottom = testimonioTop + testimonio.offsetHeight; // La parte inferior del testimonio
+      const testimonioTop = testimonio.getBoundingClientRect().top + scrollTop;
+      const testimonioBottom = testimonioTop + testimonio.offsetHeight;
 
-      // Si el testimonio está visible en la pantalla
       if (
         testimonioBottom > scrollTop &&
         testimonioTop < scrollTop + windowHeight
@@ -133,6 +140,5 @@ document.addEventListener("DOMContentLoaded", function () {
   // Llamar a la función cada vez que se haga scroll
   window.addEventListener("scroll", mostrarTestimonios);
 
-  // También llamar la función al cargar la página para que los testimonios visibles al principio ya se animen
   mostrarTestimonios();
 });

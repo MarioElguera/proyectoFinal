@@ -4,21 +4,11 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  /* Asegura que html y body ocupen toda la altura de la pantalla */
 }
 
 body {
   display: flex;
   flex-direction: column;
-}
-
-/* Main */
-main {
-  flex: 1;
-  /* Ocupa todo el espacio disponible entre el header y el footer */
-  padding: 2rem;
-  background-color: #f5f5f5;
-  /* Fondo opcional */
 }
 
 .noticias {
@@ -31,7 +21,6 @@ main {
 .noticias__titulo {
   text-align: center;
   color: #2196f3;
-  /* Azul */
 }
 
 .noticias__descripcion {
@@ -63,7 +52,6 @@ main {
 
 .acordeon__tab:hover {
   background-color: #2196f3;
-  /* Azul */
 }
 
 .acordeon__content {
@@ -81,14 +69,12 @@ main {
 
 .acordeon__articulo h3 a {
   color: #ff4747;
-  /* Rojo */
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .acordeon__articulo h3 a:hover {
   color: #2196f3;
-  /* Azul */
 }
 
 .acordeon__articulo p {
@@ -97,5 +83,4 @@ main {
 
 .acordeon__item.active .acordeon__content {
   max-height: 400px;
-  /* Ajustar al contenido */
 }

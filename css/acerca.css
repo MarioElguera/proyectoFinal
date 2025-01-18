@@ -81,14 +81,6 @@ body {
   line-height: 1;
 }
 
-/* Footer */
-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-}
-
 .acerca__contenido,
 .acerca__imagen-container,
 .valores {
