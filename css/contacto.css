@@ -17,6 +17,7 @@
   color: #555;
   margin-bottom: 2rem;
   font-size: 1rem;
+  text-align: left;
 }
 
 .contacto__formulario .formulario__grupo {
@@ -29,6 +30,7 @@
   font-weight: bold;
   color: #555;
   font-size: 15px;
+  text-align: left;
 }
 
 .contacto__formulario .formulario__input,
