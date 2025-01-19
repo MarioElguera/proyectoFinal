@@ -14,7 +14,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* Main */
 main {
   flex: 1;
   padding: 2rem;
@@ -336,7 +335,7 @@ main {
   scrollbar-color: #1877f2 #f5f5f5;
 }
 
-/* 📌 Para móviles */
+/* Para móviles */
 @media (max-width: 768px) {
   .encabezado__navegacion {
     display: none;

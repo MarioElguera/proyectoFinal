@@ -1,10 +1,8 @@
-/* Estilos globales */
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
-  /* Asegura que html y body ocupen toda la altura de la pantalla */
 }
 
 body {
